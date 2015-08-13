@@ -1,0 +1,13 @@
+app-misc/paexec 1.0.1: Parallel executor
+app-misc/runawk 1.6.0: Wrapper for AWK providing modules
+dev-lang/clean 2.4: general purpose, state-of-the-art, pure and lazy functional programming language
+dev-util/cppcheck 9999: static analyzer of C/C++ code
+dev-util/include-what-you-use 9999: find unused include directives in C/C++ programs
+dev-util/mk-configure 0.29.0: bmake-based Lightweight replacement for autotools
+dev-util/uselex 9999: look for USEless EXports in object files
+dev-util/valgrind 3.6.0 9999: An open-source memory debugger for GNU/Linux
+games-arcade/koules 1.4-r2: fast action arcade-style game w/sound and network support
+games-arcade/opentyrian 99999999: Open-source port of the DOS game Tyrian, vertical scrolling shooter
+media-sound/xmms2 9999: X(cross)platform Music Multiplexing System. The new generation of the XMMS player
+net-fs/smbnetfs 9999: FUSE filesystem for SMB shares
+x11-plugins/pidgin-window_merge 9999: pidgin plugin that merges a conversation window with the Buddy List window
