@@ -1,10 +1,10 @@
-_eclasses_=git-2	1bb87192831f668cd20d93ffb1689c94	ruby-utils	97c910cb6b087c64260df641a9b3de0c	ruby-single	9281b7403005a55b992e20bd3f92a2b4
-_md5_=688fac1e2de5b9856f003073ab4694ab
-SLOT=0
 DEFINED_PHASES=install unpack
-EAPI=5
 DEPEND=dev-vcs/git
 DESCRIPTION=look for USEless EXports in object files
-LICENSE=GPL-3
+EAPI=5
 HOMEPAGE=https://github.com/trofi/uselex/
+LICENSE=GPL-3
 RDEPEND=|| ( dev-lang/ruby:2.0 dev-lang/ruby:1.9 dev-lang/ruby:2.1 dev-lang/ruby:2.2 ) virtual/rubygems
+SLOT=0
+_eclasses_=git-2	1bb87192831f668cd20d93ffb1689c94	ruby-single	c49250968781888465d5a8597376297f	ruby-utils	97c910cb6b087c64260df641a9b3de0c
+_md5_=688fac1e2de5b9856f003073ab4694ab
