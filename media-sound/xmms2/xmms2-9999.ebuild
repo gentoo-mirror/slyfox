@@ -6,7 +6,7 @@ EAPI=5
 
 USE_RUBY="ruby19 ruby20 ruby21 ruby22"
 
-inherit eutils git-2 multiprocessing python ruby-single toolchain-funcs
+inherit eutils git-r3 multiprocessing python ruby-single toolchain-funcs
 
 DESCRIPTION="X(cross)platform Music Multiplexing System. The new generation of the XMMS player"
 HOMEPAGE="http://xmms2.org/wiki/Main_Page"
@@ -14,8 +14,6 @@ HOMEPAGE="http://xmms2.org/wiki/Main_Page"
 LICENSE="GPL-2 LGPL-2.1"
 
 EGIT_REPO_URI="git://git.xmms2.org/xmms2/xmms2-devel"
-EGIT_PROJECT=xmms2-devel
-EGIT_HAS_SUBMODULES=yeah
 
 SLOT="0"
 KEYWORDS=""
@@ -82,8 +80,6 @@ DEPEND="${RDEPEND}
 	test? ( dev-util/cunit )
 	"
 
-S=${WORKDIR}/xmms2-devel
-
 # use_enable() is taken as proto
 # $1 - useflag
 # $2 - xmms2 option/plugin name (equals to $1 if not set)
@@ -110,10 +106,8 @@ pkg_setup() {
 }
 
 src_prepare() {
-	./waf # inflate waf
-	cd .waf* || die
-	epatch "${FILESDIR}/${PN}"-0.8DrO_o-waflib-fix-perl.patch
-	cd "${S}"
+	git submodule update --init # why do I need it?
+
 	epatch "${FILESDIR}"/${P}-novg.patch
 	epatch_user
 }
