@@ -5,7 +5,7 @@ dev-util/cppcheck 9999: static analyzer of C/C++ code
 dev-util/include-what-you-use 9999: find unused include directives in C/C++ programs
 dev-util/mk-configure 0.29.0: bmake-based Lightweight replacement for autotools
 dev-util/uselex 9999: look for USEless EXports in object files
-dev-util/valgrind 3.6.0 9999: An open-source memory debugger for GNU/Linux
+dev-util/valgrind 3.9.0 9999: An open-source memory debugger for GNU/Linux
 games-arcade/koules 1.4-r2: fast action arcade-style game w/sound and network support
 games-arcade/opentyrian 99999999: Open-source port of the DOS game Tyrian, vertical scrolling shooter
 media-sound/xmms2 9999: X(cross)platform Music Multiplexing System. The new generation of the XMMS player
