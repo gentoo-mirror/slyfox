@@ -1,6 +1,7 @@
 app-misc/paexec 1.0.1: Parallel executor
 app-misc/runawk 1.6.0: Wrapper for AWK providing modules
 dev-lang/clean 2.4: general purpose, state-of-the-art, pure and lazy functional programming language
+dev-libs/wayland-protocols 9999: Wayland protocol libraries
 dev-util/cppcheck 9999: static analyzer of C/C++ code
 dev-util/include-what-you-use 9999: find unused include directives in C/C++ programs
 dev-util/mk-configure 0.29.1: bmake-based Lightweight replacement for autotools
