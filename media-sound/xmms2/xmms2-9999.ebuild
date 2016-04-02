@@ -58,7 +58,7 @@ RDEPEND="server? (
 		speex? ( media-libs/speex
 			media-libs/libogg )
 		vorbis? ( media-libs/libvorbis )
-		vocoder? ( sci-libs/fftw:3= media-libs/libsamplerate )
+		vocoder? ( sci-libs/fftw:3.0= media-libs/libsamplerate )
 		wavpack? ( media-sound/wavpack )
 		xml? ( dev-libs/libxml2 )
 	)
@@ -74,11 +74,12 @@ RDEPEND="server? (
 
 DEPEND="${RDEPEND}
 	dev-lang/python
-	python? ( dev-python/pyrex )
-	perl? ( virtual/perl-Module-Build )
 	virtual/pkgconfig
+	perl? ( dev-perl/Module-Build
+		virtual/perl-Module-Metadata )
+	python? ( dev-python/pyrex )
 	test? ( dev-util/cunit )
-	"
+"
 
 # use_enable() is taken as proto
 # $1 - useflag
