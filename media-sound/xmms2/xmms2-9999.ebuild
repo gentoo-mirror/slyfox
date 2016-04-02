@@ -1,14 +1,14 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
 EAPI=5
 
-USE_RUBY="ruby19 ruby20 ruby21 ruby22"
+USE_RUBY="ruby20 ruby21 ruby22"
 
 inherit eutils git-r3 multiprocessing python ruby-single toolchain-funcs
 
-DESCRIPTION="X(cross)platform Music Multiplexing System. The new generation of the XMMS player"
+DESCRIPTION="X(cross)platform Music Multiplexing System. Next generation of the XMMS player"
 HOMEPAGE="http://xmms2.org/wiki/Main_Page"
 #SRC_URI="mirror://sourceforge/${PN}/${MY_P}.tar.bz2"
 LICENSE="GPL-2 LGPL-2.1"
@@ -51,14 +51,14 @@ RDEPEND="server? (
 		musepack? ( media-sound/musepack-tools )
 		ofa? ( media-libs/libofa )
 		pulseaudio? ( media-sound/pulseaudio )
-		samba? ( net-fs/samba[smbclient] )
+		samba? ( net-fs/samba[smbclient(+)] )
 		sid? ( media-sound/sidplay
 			media-libs/resid )
 		sndfile? ( media-libs/libsndfile )
 		speex? ( media-libs/speex
 			media-libs/libogg )
 		vorbis? ( media-libs/libvorbis )
-		vocoder? ( sci-libs/fftw media-libs/libsamplerate )
+		vocoder? ( sci-libs/fftw:3= media-libs/libsamplerate )
 		wavpack? ( media-sound/wavpack )
 		xml? ( dev-libs/libxml2 )
 	)
@@ -109,7 +109,6 @@ src_prepare() {
 	git submodule update --init # why do I need it?
 
 	epatch "${FILESDIR}"/${P}-novg.patch
-	epatch "${FILESDIR}"/${P}-cpython.patch
 	epatch_user
 }
 

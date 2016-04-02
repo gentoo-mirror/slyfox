@@ -1,4 +1,4 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -17,11 +17,11 @@ KEYWORDS=""
 IUSE="gnome"
 
 RDEPEND=">=sys-fs/fuse-2.3
-	>=net-fs/samba-3.2[smbclient]
+	>=net-fs/samba-3.2[smbclient(+)]
 	gnome? ( gnome-base/gnome-keyring )"
 
 DEPEND="${RDEPEND}
-	dev-util/pkgconfig
+	virtual/pkgconfig
 	sys-devel/libtool
 	sys-devel/make"
 
