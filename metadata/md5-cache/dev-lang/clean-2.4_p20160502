@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=general purpose, state-of-the-art, pure and lazy functional programming language
+EAPI=6
+HOMEPAGE=http://wiki.clean.cs.ru.nl/
+KEYWORDS=~amd64
+LICENSE=LGPL-2.1 BSD-2
+SLOT=0
+SRC_URI=amd64? ( ftp://ftp.cs.ru.nl/pub/Clean/nightly/clean-itasks-linux64-20160502.tar.gz )
+_eclass_exported_funcs=src_compile:- src_install:-
+_eclasses_=multilib	23ae8c186171e6476af098d2a50d0ee0	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_md5_=3521f803e242bb5f9e91bd340b84ecf3
