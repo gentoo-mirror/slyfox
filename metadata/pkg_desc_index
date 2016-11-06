@@ -7,3 +7,4 @@ dev-util/edb 9999: cross platform x86/x86-64 debugger (inspired by Ollydbg)
 dev-util/mk-configure 0.29.1: bmake-based Lightweight replacement for autotools
 dev-util/uselex 9999: look for USEless EXports in object files
 media-sound/xmms2 9999: X(cross)platform Music Multiplexing System. Next generation of the XMMS player
+sys-libs/glibc 2.24: GNU libc6 (also called glibc2) C library
