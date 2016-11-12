@@ -15,9 +15,3 @@ media-sound/xmms2:server - Build xmms2 player daemon (otherwise only clients are
 media-sound/xmms2:sid - Support for C64 SID
 media-sound/xmms2:vocoder - Phase vocoder effect plugin
 media-sound/xmms2:xml - Enable support for various XML based playlists and sources: RSS, XSPF
-sys-libs/glibc:debug - When USE=hardened, allow fortify/stack violations to dump core (SIGABRT) and not kill self (SIGKILL)
-sys-libs/glibc:gd - build memusage and memusagestat tools
-sys-libs/glibc:nscd - Build, and enable support for, the Name Service Cache Daemon
-sys-libs/glibc:rpc - Enable obsolete RPC/NIS layers (disabling is experimental -- see bug 381391)
-sys-libs/glibc:suid - Make internal pt_chown helper setuid -- not needed if using Linux and have /dev/pts mounted with gid=5
-sys-libs/glibc:systemtap - enable systemtap static probe points
