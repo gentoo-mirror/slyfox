@@ -3,6 +3,7 @@ app-misc/paexec 1.0.1: Parallel executor
 app-misc/runawk 1.6.0: Wrapper for AWK providing modules
 app-text/qt-box-editor 9999: Editor of tesseract-ocr box files
 dev-lang/clean 2.4: general purpose, state-of-the-art, pure and lazy functional programming language
+dev-util/cargo-ebuild 0.1.3: Generates an ebuild for a package using the in-tree eclasses.
 dev-util/edb 9999: cross platform x86/x86-64 debugger (inspired by Ollydbg)
 dev-util/mk-configure 0.29.1: bmake-based Lightweight replacement for autotools
 dev-util/uselex 9999: look for USEless EXports in object files
