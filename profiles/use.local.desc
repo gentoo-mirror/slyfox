@@ -2,16 +2,3 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-media-sound/xmms2:airplay - Support for airplay format
-media-sound/xmms2:asf - Support for Monkey's Audio (APE) format with help of bundled libasf
-media-sound/xmms2:gvfs - Transport for glibs virtual filesystem
-media-sound/xmms2:ices - Icecast source output plugin
-media-sound/xmms2:mac - Support for Monkey's Audio (APE) format with help of media-sound/mac
-media-sound/xmms2:mlib-update - Enable building of xmms2-mlib-updater client
-media-sound/xmms2:mms - Support for Microsoft Media Server (MMS) streams via libmms
-media-sound/xmms2:ofa - Support for Open Fingerprint Architecture (OFA)
-media-sound/xmms2:phonehome - This client sends anonymous usage-statistics to the xmms2
-media-sound/xmms2:server - Build xmms2 player daemon (otherwise only clients are built)
-media-sound/xmms2:sid - Support for C64 SID
-media-sound/xmms2:vocoder - Phase vocoder effect plugin
-media-sound/xmms2:xml - Enable support for various XML based playlists and sources: RSS, XSPF
