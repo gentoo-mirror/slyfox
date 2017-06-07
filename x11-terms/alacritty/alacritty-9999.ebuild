@@ -5,6 +5,8 @@
 
 EAPI=6
 
+# skipping: alacritty
+# skipping: ffi-util
 CRATES="
 android_glue-0.2.2
 ansi_term-0.9.0
@@ -22,7 +24,7 @@ cgmath-0.7.0
 clap-2.24.2
 clippy-0.0.104
 clippy_lints-0.0.104
-cmake-0.1.23
+cmake-0.1.24
 cocoa-0.3.3
 copypasta-0.0.1
 core-foundation-0.2.3
@@ -30,8 +32,8 @@ core-foundation-0.3.0
 core-foundation-sys-0.2.3
 core-foundation-sys-0.3.1
 core-graphics-0.3.2
-core-graphics-0.7.0
-core-text-4.0.0
+core-graphics-0.8.1
+core-text-5.0.0
 crossbeam-0.2.10
 dlib-0.3.1
 dtoa-0.4.1
@@ -47,7 +49,7 @@ freetype-sys-0.4.0
 fs2-0.2.5
 fsevent-0.2.16
 fsevent-sys-0.1.6
-gcc-0.3.47
+gcc-0.3.49
 gdi32-sys-0.1.1
 gl_generator-0.5.3
 gleam-0.2.32
@@ -89,7 +91,7 @@ objc_id-0.1.0
 osmesa-sys-0.1.2
 owning_ref-0.2.4
 parking_lot-0.3.8
-parking_lot_core-0.2.1
+parking_lot_core-0.2.2
 phf-0.7.21
 phf_codegen-0.7.21
 phf_generator-0.7.21
@@ -117,7 +119,7 @@ shell32-sys-0.1.1
 siphasher-0.2.2
 slab-0.1.3
 slab-0.3.0
-smallvec-0.3.3
+smallvec-0.4.0
 strsim-0.6.0
 syn-0.11.11
 synom-0.11.3
