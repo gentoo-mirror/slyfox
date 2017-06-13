@@ -10,6 +10,7 @@ EAPI=6
 CRATES="
 android_glue-0.2.2
 ansi_term-0.9.0
+arraydeque-0.2.3
 atty-0.2.2
 bitflags-0.3.3
 bitflags-0.4.0
@@ -76,6 +77,7 @@ miow-0.1.5
 net2-0.2.29
 nix-0.5.1
 nix-0.7.0
+nodrop-0.1.9
 nom-1.2.4
 notify-2.6.3
 num-0.1.37
@@ -88,6 +90,7 @@ num-traits-0.1.37
 objc-0.2.2
 objc-foundation-0.1.1
 objc_id-0.1.0
+odds-0.2.25
 osmesa-sys-0.1.2
 owning_ref-0.2.4
 parking_lot-0.3.8
