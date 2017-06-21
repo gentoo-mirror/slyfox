@@ -140,7 +140,7 @@ user32-sys-0.1.2
 utf8parse-0.1.0
 vec_map-0.8.0
 void-1.0.2
-vte-0.3.0
+vte-0.3.1
 walkdir-0.1.8
 wayland-client-0.5.12
 wayland-kbd-0.3.6
