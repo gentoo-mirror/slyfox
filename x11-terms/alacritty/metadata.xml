@@ -6,6 +6,9 @@
 		<name>Sergei Trofimovich</name>
 		<description>Primary Maintainer</description>
 	</maintainer>
+	<use>
+		<flag name='fetch-crates'>Allow crates to be fetched from internet (useful for live ebuilds changing rapidly).</flag>
+	</use>
 	<upstream>
 		<remote-id type="github">jwilm/alacritty</remote-id>
 	</upstream>
