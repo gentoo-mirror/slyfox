@@ -161,12 +161,12 @@ inherit eutils cargo git-r3
 DESCRIPTION="GPU-accelerated terminal emulator"
 HOMEPAGE="https://github.com/jwilm/alacritty"
 EGIT_REPO_URI="https://github.com/jwilm/alacritty"
-SRC_URI="$(cargo_crate_uris ${CRATES})"
+SRC_URI="!fetch-crates? ( $(cargo_crate_uris ${CRATES}) )"
 RESTRICT="mirror"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="fetch-crates"
 
 RDEPEND="
 	media-libs/freetype:2=
@@ -187,7 +187,11 @@ DEPEND="${RDEPEND}
 
 src_unpack() {
 	git-r3_src_unpack
-	cargo_src_unpack
+	if use fetch-crates; then
+		ewarn "USE=fetch-crates is set. crates will be fetched from crates.io."
+	else
+		cargo_src_unpack
+	fi
 }
 
 src_install() {
