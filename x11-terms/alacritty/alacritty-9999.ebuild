@@ -6,7 +6,6 @@
 EAPI=6
 
 # skipping: alacritty
-# skipping: ffi-util
 CRATES="
 android_glue-0.2.2
 ansi_term-0.9.0
@@ -45,6 +44,7 @@ expat-sys-2.1.4
 filetime-0.1.10
 fnv-1.0.5
 font-0.1.0
+foreign-types-0.2.0
 freetype-rs-0.13.0
 freetype-sys-0.4.0
 fs2-0.2.5
