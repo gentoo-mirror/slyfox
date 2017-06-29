@@ -22,9 +22,7 @@ IUSE="${IUSE} debug fetch-crates"
 
 [[ ${CATEGORY}/${PN} != dev-util/cargo ]] && DEPEND=">=dev-util/cargo-0.13.0"
 
-# Cache crates in persistent store
-# Do no redownload them at every compilation
-ECARGO_HOME="${PORTAGE_ACTUAL_DISTDIR-${DISTDIR}}/cargo-src"
+ECARGO_HOME="${WORKDIR}/cargo_home"
 ECARGO_VENDOR="${ECARGO_HOME}/gentoo"
 
 # @FUNCTION: cargo_crate_uris
@@ -49,6 +47,10 @@ cargo_src_unpack() {
 
 	if use fetch-crates; then
 		addwrite "${ECARGO_HOME}"
+		# Cache crates in persistent store
+		# Do no redownload them at every compilation
+		ECARGO_HOME="${PORTAGE_ACTUAL_DISTDIR-${DISTDIR}}/cargo-src"
+		ECARGO_VENDOR="${ECARGO_HOME}/gentoo"
 	fi
 
 	mkdir -p "${ECARGO_VENDOR}" || die
