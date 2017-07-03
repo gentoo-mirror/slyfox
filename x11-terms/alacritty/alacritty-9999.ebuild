@@ -55,6 +55,7 @@ gdi32-sys-0.1.1
 gl_generator-0.5.3
 gleam-0.2.32
 glutin-0.6.1
+half-1.0.0
 heapsize-0.3.9
 inotify-0.2.3
 itoa-0.3.1
