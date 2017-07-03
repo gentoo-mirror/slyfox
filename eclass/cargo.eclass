@@ -46,11 +46,12 @@ cargo_src_unpack() {
 	debug-print-function ${FUNCNAME} "$@"
 
 	if use fetch-crates; then
-		addwrite "${ECARGO_HOME}"
 		# Cache crates in persistent store
 		# Do no redownload them at every compilation
 		ECARGO_HOME="${PORTAGE_ACTUAL_DISTDIR-${DISTDIR}}/cargo-src"
 		ECARGO_VENDOR="${ECARGO_HOME}/gentoo"
+
+		addwrite "${ECARGO_HOME}"
 	fi
 
 	mkdir -p "${ECARGO_VENDOR}" || die
