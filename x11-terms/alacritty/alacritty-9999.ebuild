@@ -193,5 +193,6 @@ src_unpack() {
 
 src_install() {
 	cargo_src_install
-	make_desktop_entry ${PN} Alacritty
+	make_desktop_entry ${PN} Alacritty utilities-terminal \
+		"System;TerminalEmulator"
 }
