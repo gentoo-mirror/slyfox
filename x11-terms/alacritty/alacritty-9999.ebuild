@@ -7,6 +7,7 @@ EAPI=6
 
 # skipping: alacritty
 CRATES="
+aho-corasick-0.6.3
 android_glue-0.2.3
 ansi_term-0.9.0
 approx-0.1.1
@@ -24,8 +25,8 @@ cfg-if-0.1.2
 cgl-0.2.1
 cgmath-0.15.0
 clap-2.26.0
-clippy-0.0.155
-clippy_lints-0.0.155
+clippy-0.0.164
+clippy_lints-0.0.164
 cmake-0.1.25
 cocoa-0.9.2
 conv-0.3.3
@@ -41,6 +42,7 @@ dlib-0.3.1
 dtoa-0.4.2
 dwmapi-sys-0.1.0
 either-1.1.0
+env_logger-0.4.3
 errno-0.2.3
 euclid-0.12.0
 expat-sys-2.1.5
@@ -55,14 +57,14 @@ fsevent-0.2.16
 fsevent-sys-0.1.6
 gcc-0.3.53
 gdi32-sys-0.1.1
-getopts-0.2.14
+getopts-0.2.15
 gl_generator-0.5.5
 gleam-0.4.8
 glutin-0.9.2
 heapsize-0.3.9
 inotify-0.3.0
 iovec-0.1.0
-itertools-0.6.2
+itertools-0.6.3
 itoa-0.3.3
 kernel32-sys-0.2.2
 khronos_api-1.0.1
@@ -79,6 +81,7 @@ magenta-0.1.1
 magenta-sys-0.1.1
 malloc_buf-0.0.6
 matches-0.1.6
+memchr-1.0.1
 memmap-0.4.0
 mio-0.5.1
 mio-0.6.10
@@ -108,6 +111,7 @@ quine-mc_cluskey-0.2.4
 quote-0.3.15
 rand-0.3.16
 redox_syscall-0.1.31
+regex-0.2.2
 regex-syntax-0.4.1
 rustc-serialize-0.3.24
 semver-0.6.0
@@ -119,8 +123,8 @@ serde_derive_internals-0.15.1
 serde_json-0.9.10
 serde_json-1.0.2
 serde_yaml-0.7.1
-servo-fontconfig-0.2.0
-servo-fontconfig-sys-2.11.3
+servo-fontconfig-0.4.0
+servo-fontconfig-sys-4.0.3
 shared_library-0.1.7
 shell32-sys-0.1.1
 siphasher-0.2.2
@@ -135,16 +139,20 @@ target_build_utils-0.3.1
 tempfile-2.1.6
 term_size-0.3.0
 textwrap-0.7.0
+thread_local-0.3.4
 time-0.1.38
 toml-0.4.5
 unicode-normalization-0.1.5
 unicode-segmentation-1.2.0
 unicode-width-0.1.4
 unicode-xid-0.0.4
+unreachable-1.0.0
 user32-sys-0.1.2
+utf8-ranges-1.0.0
 utf8parse-0.1.0
 vcpkg-0.2.2
 vec_map-0.8.0
+void-1.0.2
 vte-0.3.2
 walkdir-0.1.8
 wayland-client-0.9.9
