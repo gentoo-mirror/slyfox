@@ -6,4 +6,5 @@ dev-lang/clean 2.4: general purpose, state-of-the-art, pure and lazy functional 
 dev-util/cargo-ebuild 0.1.3: Generates an ebuild for a package using the in-tree eclasses.
 dev-util/mk-configure 0.29.1: bmake-based Lightweight replacement for autotools
 dev-util/uselex 9999: look for USEless EXports in object files
+sys-boot/gnu-efi 3.0s: Library for build EFI Applications
 x11-terms/alacritty 9999: GPU-accelerated terminal emulator
