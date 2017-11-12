@@ -35,6 +35,7 @@ src_prepare() {
 			Make.defaults || die #503210
 	fi
 
+	epatch "${FILESDIR}"/${P}-c99.patch
 }
 
 _emake() {
