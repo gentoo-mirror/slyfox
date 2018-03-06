@@ -175,12 +175,12 @@ inherit eutils cargo git-r3
 DESCRIPTION="GPU-accelerated terminal emulator"
 HOMEPAGE="https://github.com/jwilm/alacritty"
 EGIT_REPO_URI="https://github.com/jwilm/alacritty"
+EGIT_COMMIT="7f2b398ad2084bdaaa266e8da770a213f0a9a2eb"
 SRC_URI="$(cargo_crate_uris ${CRATES})"
 RESTRICT="mirror"
 LICENSE="Apache-2.0"
 SLOT="0"
-# Live ebuild has a tendency to break very frequently. Use at your own risk.
-#KEYWORDS="~amd64"
+KEYWORDS="~amd64"
 IUSE=""
 
 RDEPEND="
