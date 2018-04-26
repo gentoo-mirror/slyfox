@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install test
+DEPEND=app-misc/runawk sys-devel/bmake dev-util/mk-configure
+DESCRIPTION=Parallel executor
+EAPI=5
+HOMEPAGE=http://sourceforge.net/projects/paexec/
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD-2
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/project/paexec/paexec/paexec-1.1.0/paexec-1.1.0.tar.gz
+_eclasses_=bmake	bfe3761b7b01b5d3e2974ca66b68090f	mk-configure	277deb4739eaa14ddd6a0d3b606608d3	multilib	97f470f374f2e94ccab04a2fb21d811e	multiprocessing	cac3169468f893670dac3e7cb940e045	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
+_md5_=d5d135873e834b1bf487c5b6c2a71028
