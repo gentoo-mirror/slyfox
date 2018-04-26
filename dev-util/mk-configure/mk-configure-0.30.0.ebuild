@@ -6,7 +6,7 @@ EAPI=6
 inherit bmake
 
 DESCRIPTION="bmake-based Lightweight replacement for autotools"
-HOMEPAGE="http://sourceforge.net/projects/mk-configure/"
+HOMEPAGE="https://sourceforge.net/projects/mk-configure/"
 SRC_URI="mirror://sourceforge/project/${PN}/${PN}/${P}/${P}.tar.gz"
 
 LICENSE="BSD-2"

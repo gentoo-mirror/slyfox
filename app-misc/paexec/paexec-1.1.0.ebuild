@@ -6,7 +6,7 @@ EAPI=5
 inherit mk-configure
 
 DESCRIPTION="Parallel executor"
-HOMEPAGE="http://sourceforge.net/projects/paexec/"
+HOMEPAGE="https://sourceforge.net/projects/paexec/"
 SRC_URI="mirror://sourceforge/project/${PN}/${PN}/${P}/${P}.tar.gz"
 
 LICENSE="BSD-2"

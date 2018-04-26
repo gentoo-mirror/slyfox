@@ -118,4 +118,3 @@ DEPEND="
 	sys-libs/zlib:0=
 "
 RDEPEND="${DEPEND}"
-
