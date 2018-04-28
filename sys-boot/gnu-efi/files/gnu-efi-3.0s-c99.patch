@@ -1,9 +1,0 @@
-diff --git a/inc/ia64/efibind.h b/inc/ia64/efibind.h
-index 335dc1e..d037bdf 100644
---- a/inc/ia64/efibind.h
-+++ b/inc/ia64/efibind.h
-@@ -64,2 +64,4 @@ Revision History
-     #endif
-+#else
-+#    include <stdint.h>
- #endif
