@@ -8,5 +8,5 @@ LICENSE=BSD-2
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/project/paexec/paexec/paexec-1.1.0/paexec-1.1.0.tar.gz
-_eclasses_=bmake	bfe3761b7b01b5d3e2974ca66b68090f	mk-configure	277deb4739eaa14ddd6a0d3b606608d3	multilib	97f470f374f2e94ccab04a2fb21d811e	multiprocessing	cac3169468f893670dac3e7cb940e045	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9
+_eclasses_=bmake	bfe3761b7b01b5d3e2974ca66b68090f	mk-configure	277deb4739eaa14ddd6a0d3b606608d3	multilib	97f470f374f2e94ccab04a2fb21d811e	multiprocessing	cac3169468f893670dac3e7cb940e045	toolchain-funcs	fa02994d0beba88681127d93da4411ec
 _md5_=99e1203455ff010cf312d37378dda215
