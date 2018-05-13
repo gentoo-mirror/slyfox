@@ -24,7 +24,7 @@ bmake_run_tool() {
 		# bmake-based build systems are very sensitive
 		# to external environment variables.
 		# At least 'app-misc/runawk' is affected by FILESDIR
-		-u FILESDIR
+		-i
 	)
 	local job_args="-j $(makeopts_jobs)"
 
@@ -40,6 +40,7 @@ bmake_run_tool() {
 
 		CFLAGS="${CFLAGS}"
 		LDFLAGS="${LDFLAGS}"
+		PATH="${PATH}"
 	)
 
 	# at least bmake on mk-configure fails to parse '-j N install' commandline
