@@ -34,5 +34,5 @@ src_configure() {
 
 src_install() {
 	default # does not do anything, needs a .pro fix
-	dobin qt-box-editor-*
+	dobin release/qt-box-editor-*
 }
