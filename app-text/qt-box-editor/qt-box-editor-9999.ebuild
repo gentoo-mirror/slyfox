@@ -23,11 +23,6 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
-PATCHES=(
-	"${FILESDIR}"/${P}-nowindows.patch
-	"${FILESDIR}"/${P}-qt5.patch
-)
-
 src_configure() {
 	eqmake5
 }
