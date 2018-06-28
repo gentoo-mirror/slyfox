@@ -1,9 +1,0 @@
-diff --git a/qt-box-editor.pro b/qt-box-editor.pro
-index 863e6c3..abaa365 100644
---- a/qt-box-editor.pro
-+++ b/qt-box-editor.pro
-@@ -92,3 +92,3 @@ win32 {
- unix:!macx {
--    greaterThan(QT_MAJOR_VERSION, 5) {
-+    greaterThan(QT_MAJOR_VERSION, 4) {
-       message(Qt $$[QT_VERSION] was detected.)
