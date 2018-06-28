@@ -22,13 +22,13 @@ mk-configure_run_tool() {
 }
 
 mk-configure_src_compile() {
-	mk-configure_run_tool
+	mk-configure_run_tool "$@"
 }
 
 mk-configure_src_test() {
-	mk-configure_run_tool test
+	mk-configure_run_tool test "$@"
 }
 
 mk-configure_src_install() {
-	mk-configure_run_tool DESTDIR="${D}" install
+	mk-configure_run_tool DESTDIR="${D}" install "$@"
 }
