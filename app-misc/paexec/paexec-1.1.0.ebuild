@@ -16,3 +16,7 @@ KEYWORDS="~amd64 ~x86"
 DEPEND="app-misc/runawk"
 
 RESTRICT=test # tests hang. missing tool?
+
+src_compile() {
+	mk-configure_src_compile WARNERR=no
+}
