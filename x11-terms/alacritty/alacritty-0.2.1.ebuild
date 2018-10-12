@@ -181,17 +181,17 @@ xml-rs-0.7.0
 yaml-rust-0.4.2
 "
 
-inherit eutils cargo git-r3
+inherit cargo git-r3
 
 DESCRIPTION="GPU-accelerated terminal emulator"
 HOMEPAGE="https://github.com/jwilm/alacritty"
 EGIT_REPO_URI="https://github.com/jwilm/alacritty"
+EGIT_COMMIT="44909bae69741f01c0aa354c03dac3f4b358c264"
 SRC_URI="$(cargo_crate_uris ${CRATES})"
 RESTRICT="mirror"
 LICENSE="Apache-2.0"
 SLOT="0"
-# Live ebuild has a tendency to break very frequently. Use at your own risk.
-#KEYWORDS="~amd64"
+KEYWORDS="~amd64"
 IUSE=""
 
 RDEPEND="
