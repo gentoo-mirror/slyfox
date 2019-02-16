@@ -41,6 +41,8 @@ bmake_run_tool() {
 		CFLAGS="${CFLAGS}"
 		LDFLAGS="${LDFLAGS}"
 		PATH="${PATH}"
+
+		CCACHE_DIR="${CCACHE_DIR}"
 	)
 
 	# at least bmake on mk-configure fails to parse '-j N install' commandline
