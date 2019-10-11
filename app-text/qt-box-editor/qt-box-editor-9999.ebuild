@@ -1,7 +1,7 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 inherit qmake-utils git-r3
 
 DESCRIPTION="Editor of tesseract-ocr box files"
@@ -28,6 +28,5 @@ src_configure() {
 }
 
 src_install() {
-	default # does not do anything, needs a .pro fix
-	dobin release/qt-box-editor-*
+	INSTALL_ROOT=${D}/usr default
 }
