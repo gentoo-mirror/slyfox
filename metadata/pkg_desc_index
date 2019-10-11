@@ -2,7 +2,6 @@ app-misc/neercs 9999: Terminal multiplexer with unique features
 app-misc/paexec 1.1.1: Parallel executor
 app-misc/runawk 1.6.1: Wrapper for AWK providing modules
 app-text/qt-box-editor 9999: Editor of tesseract-ocr box files
-dev-util/cargo-ebuild 0.1.5: Generates an ebuild for a package using the in-tree eclasses.
 dev-util/mk-configure 0.32.0: bmake-based Lightweight replacement for autotools
 dev-util/uselex 9999: look for USEless EXports in object files
 sys-devel/autoconf 2.64: Used to create autoconfiguration files
