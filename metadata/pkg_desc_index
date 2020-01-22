@@ -5,7 +5,7 @@ app-text/qt-box-editor 9999: Editor of tesseract-ocr box files
 dev-games/clunk 9999: real-time binaural sound generation library (vangers-friendly)
 dev-scheme/guile-json 0.6.0 3.2.0: JSON module for Guile
 dev-scheme/guile-ssh 0.11.3: SSH module for Guile
-dev-util/mk-configure 0.32.0 0.32.1 0.33.0: bmake-based Lightweight replacement for autotools
+dev-util/mk-configure 0.33.0 0.33.1: bmake-based Lightweight replacement for autotools
 dev-util/uselex 9999: look for USEless EXports in object files
 games-fps/quake3 9999: Quake III Arena - 3rd installment of the classic id 3D first-person shooter
 games-misc/vangers 9999: Video game combines elements of the racing and role-playing genres.
