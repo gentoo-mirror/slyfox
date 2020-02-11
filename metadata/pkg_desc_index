@@ -3,6 +3,7 @@ app-misc/paexec 1.1.1: Parallel executor
 app-misc/runawk 1.6.1: Wrapper for AWK providing modules
 app-text/qt-box-editor 9999: Editor of tesseract-ocr box files
 dev-games/clunk 9999: real-time binaural sound generation library (vangers-friendly)
+dev-lang/rebol-bin 3_pre20140304: Relative Expression-Based Object Language
 dev-scheme/guile-json 0.6.0 3.2.0: JSON module for Guile
 dev-scheme/guile-ssh 0.11.3: SSH module for Guile
 dev-util/mk-configure 0.33.0 0.33.1: bmake-based Lightweight replacement for autotools
