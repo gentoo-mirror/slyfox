@@ -1,0 +1,2 @@
+# undo ::gentoo mask
+-dev-lang/rebol-bin
