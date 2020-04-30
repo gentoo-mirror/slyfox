@@ -1,8 +1,8 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-inherit eutils flag-o-matic toolchain-funcs
+inherit eutils desktop flag-o-matic toolchain-funcs
 [[ "${PV}" == 9999* ]] && inherit git-r3
 
 MY_PN="ioquake3"
