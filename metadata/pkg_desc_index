@@ -1,11 +1,11 @@
 app-misc/neercs 9999: Terminal multiplexer with unique features
-app-misc/paexec 1.1.1 1.1.2: Parallel executor
+app-misc/paexec 1.1.1 1.1.2 1.1.3: Parallel executor
 app-misc/runawk 1.6.1: Wrapper for AWK providing modules
 app-text/qt-box-editor 9999: Editor of tesseract-ocr box files
 dev-games/clunk 9999: real-time binaural sound generation library (vangers-friendly)
 dev-lang/rebol-bin 3_pre20140304: Relative Expression-Based Object Language
 dev-util/flameprof 0.4: cProfile flamegraph generator
-dev-util/mk-configure 0.34.0 0.34.1: bmake-based Lightweight replacement for autotools
+dev-util/mk-configure 0.34.0 0.34.1 0.34.2: bmake-based Lightweight replacement for autotools
 dev-util/uselex 9999: look for USEless EXports in object files
 games-fps/quake3 9999: Quake III Arena - 3rd installment of the classic id 3D first-person shooter
 games-misc/vangers 9999: Video game combines elements of the racing and role-playing genres.
