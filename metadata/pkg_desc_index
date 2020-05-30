@@ -8,6 +8,7 @@ dev-libs/fribidi 1.0.9 1.0.9-r1: A free implementation of the unicode bidirectio
 dev-libs/librdkafka 1.4.2 1.4.2-r1: Apache Kafka C/C++ client library
 dev-util/flameprof 0.4: cProfile flamegraph generator
 dev-util/mk-configure 0.34.0 0.34.1 0.34.2: bmake-based Lightweight replacement for autotools
+dev-util/perf 5.6.14 5.6.14-r1: Userland tools for Linux Performance Counters
 dev-util/uselex 9999: look for USEless EXports in object files
 games-fps/quake3 9999: Quake III Arena - 3rd installment of the classic id 3D first-person shooter
 games-misc/vangers 9999: Video game combines elements of the racing and role-playing genres.
