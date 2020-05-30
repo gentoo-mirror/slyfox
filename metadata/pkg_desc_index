@@ -14,4 +14,6 @@ media-fonts/terminus-font 4.48 4.48-r1: A clean fixed font for the console and X
 media-fonts/terminus-ttf 4.47.0: TTF version of media-fonts/terminus-font
 media-gfx/gimp 2.10.18-r1 2.10.18-r2: GNU Image Manipulation Program
 sys-auth/pambase 20200304 20200304-r1: PAM base configuration files
+sys-devel/flex 2.6.4-r1 2.6.4-r2: The Fast Lexical Analyzer
 sys-fs/libsqlfs 1.3.2: sqlite-backed FUSE filesystem
+x11-libs/gtk+ 3.24.20 3.24.20-r1: Gimp ToolKit +
