@@ -25,6 +25,10 @@ src_prepare() {
 	default
 
 	eautoreconf
+
+	# live ebuild autogenerates test name,
+	# does not know how to read them locally
+	multilib_copy_sources
 }
 
 sandbox_death_notice() {
@@ -35,7 +39,7 @@ sandbox_death_notice() {
 multilib_src_configure() {
 	filter-lfs-flags #90228
 
-	ECONF_SOURCE="${S}" econf
+	econf
 }
 
 multilib_src_test() {
