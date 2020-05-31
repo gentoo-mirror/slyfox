@@ -25,6 +25,10 @@ src_prepare() {
 	default
 
 	eautoreconf
+
+	# live ebuild autogenerates test name,
+	# does not know how to read them locally
+	multilib_copy_sources
 }
 
 sandbox_death_notice() {
@@ -35,12 +39,12 @@ sandbox_death_notice() {
 multilib_src_configure() {
 	filter-lfs-flags #90228
 
-	ECONF_SOURCE="${S}" econf
+	econf
 }
 
 multilib_src_test() {
 	# Default sandbox build will run with --jobs set to # cpus.
-	emake check TESTSUITEFLAGS="--jobs=$(makeopts_jobs)"
+	emake -j1 check TESTSUITEFLAGS="--jobs=$(makeopts_jobs)"
 }
 
 multilib_src_install_all() {
