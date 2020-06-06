@@ -19,5 +19,4 @@ sys-apps/sandbox 2.18 9999: sandbox'd LD_PRELOAD hack
 sys-auth/pambase 20200304 20200304-r1: PAM base configuration files
 sys-devel/flex 2.6.4-r1 2.6.4-r2: The Fast Lexical Analyzer
 sys-fs/libsqlfs 1.3.2: sqlite-backed FUSE filesystem
-www-client/firefox 77.0.1 77.0.1-r1: Firefox Web Browser
 x11-libs/gtk+ 3.24.20 3.24.20-r1: Gimp ToolKit +
