@@ -57,6 +57,12 @@ my_platform() {
 	usex kernel_linux linux freebsd
 }
 
+src_prepare() {
+	default
+
+	tc-export CC
+}
+
 src_compile() {
 
 	buildit() { use $1 && echo 1 || echo 0 ; }
