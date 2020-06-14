@@ -5,7 +5,6 @@ app-text/qt-box-editor 9999: Editor of tesseract-ocr box files
 dev-games/clunk 9999: real-time binaural sound generation library (vangers-friendly)
 dev-lang/rebol-bin 3_pre20140304: Relative Expression-Based Object Language
 dev-libs/fribidi 1.0.9 1.0.9-r1: A free implementation of the unicode bidirectional algorithm
-dev-libs/librdkafka 1.4.2 1.4.2-r1: Apache Kafka C/C++ client library
 dev-util/flameprof 0.4: cProfile flamegraph generator
 dev-util/mk-configure 0.34.0 0.34.1 0.34.2: bmake-based Lightweight replacement for autotools
 dev-util/uselex 9999: look for USEless EXports in object files
