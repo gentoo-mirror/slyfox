@@ -5,18 +5,6 @@
 games-fps/quake3:mumble - Adds player-location (positional audio) support to VoIP
 games-fps/quake3:teamarena - Adds support for Team Arena expansion pack
 games-fps/quake3:voice - Adds VoIP support
-media-fonts/terminus-font:a-like-o - Changes view of letter 'a' - a looks like o (see homepage)
-media-fonts/terminus-font:center-tilde - Place the '~' character vertically centered on the line instead of to the top.
-media-fonts/terminus-font:distinct-l - ll2 variant with more distinctive l (lowercase L)
-media-fonts/terminus-font:otf - Install Open Type Font (OTF) (required for HarfBuzz backend)
-media-fonts/terminus-font:pcf - Install Portable Compiled Font (PCF) (required for X11)
-media-fonts/terminus-font:pcf-unicode-only - Remove non-unicode PCF fonts that could be problematic. See bug #520222.
-media-fonts/terminus-font:psf - Install PC Screen Font (PSF) with unicode data (for linux console)
-media-fonts/terminus-font:quote - Changes view of quotes: symmetric ` and ' instead of asymmetric one (see homepage)
-media-fonts/terminus-font:ru-dv - Changes view of Russian letters 'de' and 've' (see homepage)
-media-fonts/terminus-font:ru-g - Changes view of Russian letter 'ge' (see homepage)
-media-fonts/terminus-font:ru-i - Changes view of Russian letter 'i' - not like Latin u, but like "mirrored" N (see homepage)
-media-fonts/terminus-font:ru-k - Changes view of Russian letter 'k' (see homepage)
 media-gfx/gimp:heif - Enable support for ISO/IEC 23008-12:2017 HEIF files
 media-gfx/gimp:vector-icons - Enable support for vector icons (experimental)
 sys-auth/pambase:consolekit - Enable pam_ck_connector module on local system logins. This allows for console logins to make use of ConsoleKit authorization.
