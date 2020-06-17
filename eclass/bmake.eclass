@@ -37,6 +37,7 @@ bmake_run_tool() {
 		CC="$(tc-getCC)"
 		CXX="$(tc-getCXX)"
 		LD="$(tc-getLD)"
+		USE_NM="$(tc-getNM)"
 
 		CFLAGS="${CFLAGS}"
 		LDFLAGS="${LDFLAGS}"
