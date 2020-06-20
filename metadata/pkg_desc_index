@@ -4,7 +4,6 @@ app-misc/runawk 1.6.1: Wrapper for AWK providing modules
 app-text/qt-box-editor 9999: Editor of tesseract-ocr box files
 dev-games/clunk 9999: real-time binaural sound generation library (vangers-friendly)
 dev-lang/rebol-bin 3_pre20140304: Relative Expression-Based Object Language
-dev-libs/fribidi 1.0.9 1.0.9-r1: A free implementation of the unicode bidirectional algorithm
 dev-util/flameprof 0.4: cProfile flamegraph generator
 dev-util/mk-configure 0.34.0 0.34.1 0.34.2: bmake-based Lightweight replacement for autotools
 dev-util/uselex 9999: look for USEless EXports in object files
@@ -15,4 +14,3 @@ media-gfx/gimp 2.10.18-r1 2.10.18-r2: GNU Image Manipulation Program
 sys-apps/sandbox 2.18 9999: sandbox'd LD_PRELOAD hack
 sys-devel/flex 2.6.4-r1 2.6.4-r2: The Fast Lexical Analyzer
 sys-fs/libsqlfs 1.3.2: sqlite-backed FUSE filesystem
-x11-libs/gtk+ 3.24.20 3.24.20-r1: Gimp ToolKit +

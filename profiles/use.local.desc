@@ -7,6 +7,3 @@ games-fps/quake3:teamarena - Adds support for Team Arena expansion pack
 games-fps/quake3:voice - Adds VoIP support
 media-gfx/gimp:heif - Enable support for ISO/IEC 23008-12:2017 HEIF files
 media-gfx/gimp:vector-icons - Enable support for vector icons (experimental)
-x11-libs/gtk+:broadway - Enable the GDK Broadway backend.
-x11-libs/gtk+:cloudprint - Enable printing via Google Cloud Print.
-x11-libs/gtk+:colord - Use x11-misc/colord for color management in printing
