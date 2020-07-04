@@ -8,5 +8,5 @@ LICENSE=BSD-2
 PROPERTIES=live
 RDEPEND=>=dev-lang/perl-5.10.0 dev-perl/Exporter-Lite dev-perl/File-Which dev-perl/Getopt-Tabular dev-perl/Regexp-Common dev-perl/TermReadKey sys-devel/clang:10 sys-devel/llvm:10
 SLOT=0
-_eclasses_=git-r3	86a0188f2ad9eb3d65e4d031ab8a0422	llvm	78f8b6f29bd3b0263a4c9a3785e5af71
+_eclasses_=git-r3	8ec5b53812bce105ae7943930e4660f8	llvm	78f8b6f29bd3b0263a4c9a3785e5af71
 _md5_=327f81bf7333cb3934de9b2c3af85f02
