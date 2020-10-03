@@ -85,6 +85,7 @@ src_compile() {
 		GENERATE_DEPENDENCIES=0 \
 		OPTIMIZE="" \
 		PLATFORM="$(my_platform)" \
+		TOOLS_CC="$(tc-getBUILD_CC)" \
 		USE_CODEC_VORBIS=$(buildit vorbis) \
 		USE_CURL=$(buildit curl) \
 		USE_CURL_DLOPEN=0 \
