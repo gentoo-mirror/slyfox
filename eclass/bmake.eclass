@@ -14,6 +14,7 @@ inherit multiprocessing toolchain-funcs
 : ${BMAKE_PREFIX:=${EPREFIX}/usr}
 : ${BMAKE_SYSCONFDIR:=${EPREFIX}/etc}
 : ${BMAKE_MANDIR:=${BMAKE_PREFIX}/share/man}
+: ${BMAKE_DOCDIR:=${BMAKE_PREFIX}/share/doc/${PF}}
 
 DEPEND="sys-devel/bmake"
 
@@ -32,6 +33,7 @@ bmake_run_tool() {
 		PREFIX="${BMAKE_PREFIX}"
 		SYSCONFDIR="${BMAKE_SYSCONFDIR}"
 		MANDIR="${BMAKE_MANDIR}"
+		DOCDIR="${BMAKE_DOCDIR}"
 
 		AR="$(tc-getAR)"
 		CC="$(tc-getCC)"
