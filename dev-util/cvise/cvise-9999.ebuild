@@ -12,7 +12,6 @@ HOMEPAGE="https://github.com/marxin/cvise/"
 #SRC_URI="https://github.com/marxin/cvise/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 EGIT_REPO_URI="https://github.com/marxin/cvise.git"
 
-
 LICENSE="UoI-NCSA"
 SLOT="0"
 #KEYWORDS="~amd64 ~x86"
@@ -42,6 +41,11 @@ BDEPEND="
 
 llvm_check_deps() {
 	has_version "sys-devel/clang:${LLVM_SLOT}"
+}
+
+src_install() {
+	cmake_src_install
+	python_doscript "${ED}"/usr/bin/cvise
 }
 
 src_test() {
