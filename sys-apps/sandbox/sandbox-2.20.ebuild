@@ -3,16 +3,15 @@
 
 EAPI=7
 
-inherit flag-o-matic multilib-minimal multiprocessing autotools git-r3
+inherit flag-o-matic multilib-minimal multiprocessing
 
 DESCRIPTION="sandbox'd LD_PRELOAD hack"
 HOMEPAGE="https://wiki.gentoo.org/wiki/Project:Sandbox"
-EGIT_REPO_URI="https://anongit.gentoo.org/git/proj/sandbox.git"
-#SRC_URI="https://dev.gentoo.org/~slyfox/distfiles/${P}.tar.xz"
+SRC_URI="https://dev.gentoo.org/~mgorny/dist/${P}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0"
-#KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
 IUSE=""
 
 DEPEND="app-arch/xz-utils
@@ -20,16 +19,6 @@ DEPEND="app-arch/xz-utils
 RDEPEND=""
 
 has sandbox_death_notice ${EBUILD_DEATH_HOOKS} || EBUILD_DEATH_HOOKS="${EBUILD_DEATH_HOOKS} sandbox_death_notice"
-
-src_prepare() {
-	default
-
-	eautoreconf
-
-	# live ebuild autogenerates test name,
-	# does not know how to read them locally
-	multilib_copy_sources
-}
 
 sandbox_death_notice() {
 	ewarn "If configure failed with a 'cannot run C compiled programs' error, try this:"
@@ -39,7 +28,7 @@ sandbox_death_notice() {
 multilib_src_configure() {
 	filter-lfs-flags #90228
 
-	econf
+	ECONF_SOURCE="${S}" econf
 }
 
 multilib_src_test() {
