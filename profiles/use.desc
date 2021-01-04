@@ -1,6 +1,0 @@
-# Copyright 1999-2015 Gentoo Foundation
-# Distributed under the terms of the GNU General Public License v2
-
-# Keep them sorted
-
-fetch-crates - allow crates to be fetched from internet; useful for live ebuilds changing rapidly or crates with unlocked dependencies
