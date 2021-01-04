@@ -1,10 +1,10 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 : ${CMAKE_MAKEFILE_GENERATOR=ninja}
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..9} )
 inherit cmake llvm python-single-r1
 
 DESCRIPTION="Super-parallel Python port of the C-Reduce"
@@ -19,8 +19,14 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 REQUIRED_USE=${PYTHON_REQUIRED_USE}
 
-LLVM_MAX_SLOT=10
-DEPEND="sys-devel/clang:${LLVM_MAX_SLOT}"
+LLVM_MAX_SLOT=12
+DEPEND="
+	|| (
+		sys-devel/clang:12
+		sys-devel/clang:11
+		sys-devel/clang:10
+	)
+	<=sys-devel/clang-$(( LLVM_MAX_SLOT + 1 )):="
 RDEPEND="${DEPEND}
 	${PYTHON_DEPS}
 	$(python_gen_cond_dep '
@@ -41,6 +47,16 @@ BDEPEND="
 
 llvm_check_deps() {
 	has_version "sys-devel/clang:${LLVM_SLOT}"
+}
+
+pkg_setup() {
+	python-single-r1_pkg_setup
+	llvm_pkg_setup
+}
+
+src_prepare() {
+	sed -i -e 's:-n auto::' -e 's:--flake8::' setup.cfg || die
+	cmake_src_prepare
 }
 
 src_test() {
