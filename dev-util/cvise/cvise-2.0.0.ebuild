@@ -5,16 +5,16 @@ EAPI=7
 
 : ${CMAKE_MAKEFILE_GENERATOR=ninja}
 PYTHON_COMPAT=( python3_{6..9} )
-inherit cmake llvm python-single-r1 git-r3
+inherit cmake llvm python-single-r1
 
 DESCRIPTION="Super-parallel Python port of the C-Reduce"
 HOMEPAGE="https://github.com/marxin/cvise/"
-#SRC_URI="https://github.com/marxin/cvise/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-EGIT_REPO_URI="https://github.com/marxin/cvise.git"
+SRC_URI="
+	https://github.com/marxin/cvise/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="UoI-NCSA"
 SLOT="0"
-#KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 REQUIRED_USE=${PYTHON_REQUIRED_USE}
@@ -57,16 +57,6 @@ pkg_setup() {
 src_prepare() {
 	sed -i -e 's:-n auto::' -e 's:--flake8::' setup.cfg || die
 	cmake_src_prepare
-}
-
-src_install() {
-	cmake_src_install
-
-	# By default cvise installs scripts with '#!/usr/bin/env python3'
-	# shebang. That breaks cvise if active python does not match
-	# python cvise was built against.
-	python_doscript "${ED}"/usr/bin/cvise
-	python_doscript "${ED}"/usr/bin/cvise-delta
 }
 
 src_test() {
