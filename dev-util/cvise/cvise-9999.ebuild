@@ -5,7 +5,7 @@ EAPI=7
 
 : ${CMAKE_MAKEFILE_GENERATOR=ninja}
 PYTHON_COMPAT=( python3_{6..9} )
-inherit cmake llvm python-single-r1 git-r3
+inherit cmake llvm python-single-r1 git-r3 toolchain-funcs
 
 DESCRIPTION="Super-parallel Python port of the C-Reduce"
 HOMEPAGE="https://github.com/marxin/cvise/"
@@ -57,6 +57,11 @@ pkg_setup() {
 src_prepare() {
 	sed -i -e 's:-n auto::' -e 's:--flake8::' setup.cfg || die
 	cmake_src_prepare
+
+	# patch out hardcoded 'gcc' call
+	sed \
+		-e 's/gcc -c /'$(tc-getCC)' -c /' \
+		-i tests/test_cvise.py || die
 }
 
 src_install() {
