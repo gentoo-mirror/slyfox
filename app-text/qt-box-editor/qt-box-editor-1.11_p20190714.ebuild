@@ -2,16 +2,17 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-inherit qmake-utils git-r3
+inherit qmake-utils
+
+COMMIT=cba2929dabc6c715acd1a282ba161fee914c87f6
 
 DESCRIPTION="Editor of tesseract-ocr box files"
 HOMEPAGE="http://zdenop.github.com/qt-box-editor/"
-#SRC_URI="https://github.com/zdenop/qt-box-editor/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-EGIT_REPO_URI="https://github.com/zdenop/qt-box-editor"
+SRC_URI="https://github.com/zdenop/qt-box-editor/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-#KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
 	app-text/tesseract:=
@@ -22,6 +23,8 @@ RDEPEND="
 	media-libs/leptonica:=
 "
 DEPEND="${RDEPEND}"
+
+S=${WORKDIR}/qt-box-editor-${COMMIT}
 
 src_configure() {
 	eqmake5
