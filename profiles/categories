@@ -6,5 +6,4 @@ dev-util
 games-fps
 games-misc
 media-fonts
-sys-fs
-x11-terms
+sys-apps
