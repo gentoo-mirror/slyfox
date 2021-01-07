@@ -5,9 +5,9 @@ dev-games/clunk 9999: real-time binaural sound generation library (vangers-frien
 dev-lang/rebol-bin 3_pre20140304: Relative Expression-Based Object Language
 dev-util/cvise 2.0.0 9999: Super-parallel Python port of the C-Reduce
 dev-util/flameprof 0.4: cProfile flamegraph generator
-dev-util/mk-configure 0.35.0: bmake-based Lightweight replacement for autotools
+dev-util/mk-configure 0.35.0 0.36.0: bmake-based Lightweight replacement for autotools
 dev-util/uselex 9999: look for USEless EXports in object files
 games-fps/quake3 9999: Quake III Arena - 3rd installment of the classic id 3D first-person shooter
 games-misc/vangers 9999: Video game combines elements of the racing and role-playing genres.
 media-fonts/terminus-ttf 4.47.0: TTF version of media-fonts/terminus-font
-sys-apps/sandbox 2.18 9999: sandbox'd LD_PRELOAD hack
+sys-apps/sandbox 2.20 9999: sandbox'd LD_PRELOAD hack
