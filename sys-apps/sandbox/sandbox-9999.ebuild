@@ -1,12 +1,12 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-inherit eutils flag-o-matic multilib-minimal multiprocessing pax-utils autotools git-r3
+inherit flag-o-matic multilib-minimal multiprocessing autotools git-r3
 
 DESCRIPTION="sandbox'd LD_PRELOAD hack"
-HOMEPAGE="https://www.gentoo.org/proj/en/portage/sandbox/"
+HOMEPAGE="https://wiki.gentoo.org/wiki/Project:Sandbox"
 EGIT_REPO_URI="https://anongit.gentoo.org/git/proj/sandbox.git"
 #SRC_URI="https://dev.gentoo.org/~slyfox/distfiles/${P}.tar.xz"
 
