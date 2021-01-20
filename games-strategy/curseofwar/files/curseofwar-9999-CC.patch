@@ -1,0 +1,9 @@
+--- a/Makefile
++++ b/Makefile
+@@ -1,5 +1,5 @@
+ SHELL = /bin/sh
+-CC      = gcc
++CC      ?= gcc
+ INSTALL = install
+ EXEC_NCURSES = curseofwar
+ EXEC_SDL = curseofwar-sdl
