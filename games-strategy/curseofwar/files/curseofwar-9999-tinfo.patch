@@ -1,0 +1,11 @@
+--- a/Makefile
++++ b/Makefile
+@@ -54,7 +54,7 @@ ifdef SDL
+ else
+  OBJS += $(OBJS_NCURSES)
+  HDRS += $(HDRS_NCURSES)
+- LDLIBS += -lncurses
++ LDLIBS += $(shell pkg-config --libs ncurses)
+  EXEC = $(EXEC_NCURSES)
+  # Version-specific
+  INSTALL_OPTIONAL = install-manpage install-changelog

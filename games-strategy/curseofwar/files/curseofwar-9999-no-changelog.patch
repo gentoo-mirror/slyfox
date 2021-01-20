@@ -1,0 +1,12 @@
+Gentoo's default installer already installs CHANGELOG.
+--- a/Makefile
++++ b/Makefile
+@@ -57,7 +57,7 @@ else
+  LDLIBS += $(shell pkg-config --libs ncurses)
+  EXEC = $(EXEC_NCURSES)
+  # Version-specific
+- INSTALL_OPTIONAL = install-manpage install-changelog
++ INSTALL_OPTIONAL = install-manpage
+  UNINSTALL_OPTIONAL = uninstall-manpage uninstall-changelog
+ endif
+ 
