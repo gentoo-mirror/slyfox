@@ -1,0 +1,11 @@
+--- a/surmap/CMakeLists.txt
++++ b/surmap/CMakeLists.txt
+@@ -24,7 +24,7 @@ SET(surmap_SRCS
+ SET_SOURCE_FILES_PROPERTIES(${surmap_SRCS}
+ 		PROPERTIES COMPILE_FLAGS
+ 		"-Wno-parentheses -Wno-unused-variable -Wno-unused-parameter -Wno-register -Wno-dangling-else \
+-		 -Werror=missing-field-initializers -Werror=uninitialized")
++		 -Werror=missing-field-initializers")
+ 
+ SET(vangers_surmap_SRCS
+ 	"${PROJECT_SOURCE_DIR}/src/3d/3dobject.cpp"

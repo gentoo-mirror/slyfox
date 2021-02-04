@@ -23,6 +23,8 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
+PATCHES=("${FILESDIR}"/${P}-noerror.patch)
+
 src_install() {
 	dobin "${BUILD_DIR}"/src/vangers
 }
