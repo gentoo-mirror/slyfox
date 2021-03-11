@@ -13,10 +13,15 @@ EGIT_REPO_URI="https://anongit.gentoo.org/git/proj/sandbox.git"
 LICENSE="GPL-2"
 SLOT="0"
 #KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
-IUSE=""
+IUSE="test"
 
-DEPEND="app-arch/xz-utils
-	>=app-misc/pax-utils-0.1.19" #265376
+RESTRICT="!test? ( test )"
+
+DEPEND="
+	app-arch/xz-utils
+	>=app-misc/pax-utils-0.1.19
+	test? ( dev-libs/libsigsegv )
+"
 RDEPEND=""
 
 has sandbox_death_notice ${EBUILD_DEATH_HOOKS} || EBUILD_DEATH_HOOKS="${EBUILD_DEATH_HOOKS} sandbox_death_notice"
