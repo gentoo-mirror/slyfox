@@ -69,7 +69,7 @@ src_install() {
 
 pkg_postinst() {
 	einfo "Howto:"
-	einfo " - add 'ANIM', 'SOUNDS', 'MUSIC', 'FONTS' to ~/.local/share/fheroes2/files/"
-	einfo " - \$ cd ~/.local/share/fheroes2/files/"
+	einfo " - add 'ANIM', 'SOUNDS', 'MUSIC', 'FONTS' to ~/.local/share/fheroes2/files"
+	einfo " - \$ cd ~/.local/share/fheroes2"
 	einfo " - \$ fheroes2"
 }
