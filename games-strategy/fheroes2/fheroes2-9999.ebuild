@@ -3,16 +3,16 @@
 
 EAPI=7
 
-inherit flag-o-matic toolchain-funcs
+inherit flag-o-matic git-r3 toolchain-funcs
 
 DESCRIPTION="free implementation of Heroes of Might and Magic II game engine"
 HOMEPAGE="https://ihhub.github.io/fheroes2/"
 
-SRC_URI="https://github.com/ihhub/fheroes2/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+EGIT_REPO_URI="https://github.com/ihhub/fheroes2"
+#SRC_URI="https://github.com/ihhub/fheroes2/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="GPL-2"
 
 SLOT="0"
-KEYWORDS="~amd64"
 
 RDEPEND="
 	dev-libs/tinyxml:0=
