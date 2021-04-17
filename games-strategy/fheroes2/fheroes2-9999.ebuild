@@ -5,8 +5,8 @@ EAPI=7
 
 inherit flag-o-matic git-r3 toolchain-funcs
 
-DESCRIPTION="This is a sample skeleton ebuild file"
-HOMEPAGE="https://foo.example.org/"
+DESCRIPTION="free implementation of Heroes of Might and Magic II game engine"
+HOMEPAGE="https://ihhub.github.io/fheroes2/"
 
 EGIT_REPO_URI="https://github.com/ihhub/fheroes2"
 #SRC_URI="https://github.com/ihhub/fheroes2/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
