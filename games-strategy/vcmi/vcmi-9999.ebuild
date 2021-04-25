@@ -17,16 +17,28 @@ SLOT="0"
 RESTRICT=test
 
 RDEPEND="
-	>=dev-libs/boost-1.48:=
-	sys-libs/zlib:=[minizip]
+	>=dev-libs/boost-1.48:=[threads]
+	dev-qt/qtcore:=
 	media-video/ffmpeg:=
 	media-libs/libsdl2:=
 	media-libs/sdl2-image:=
 	media-libs/sdl2-mixer:=
 	media-libs/sdl2-ttf:=
+	sys-libs/zlib:=[minizip]
 
 "
 DEPEND="${RDEPEND}"
+
+src_configure() {
+	local mycmakeargs=(
+		# Stole from debian/control. Defaults do not have
+		# RPATH at all.
+		-DCMAKE_INSTALL_RPATH_USE_LINK_PATH=ON
+		-DCMAKE_INSTALL_RPATH="${EPREFIX}"/usr/$(get_libdir)/vcmi
+	)
+
+	cmake_src_configure
+}
 
 pkg_postinst() {
 	einfo "To start check out https://wiki.vcmi.eu/Installation_on_Linux#Automated_install"
