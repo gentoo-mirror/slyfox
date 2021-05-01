@@ -19,6 +19,9 @@ RESTRICT=test
 RDEPEND="
 	>=dev-libs/boost-1.48:=[threads]
 	dev-qt/qtcore:=
+	dev-qt/qtgui:=
+	dev-qt/qtnetwork:=
+	dev-qt/qtwidgets:=
 	media-video/ffmpeg:=
 	media-libs/libsdl2:=
 	media-libs/sdl2-image:=
