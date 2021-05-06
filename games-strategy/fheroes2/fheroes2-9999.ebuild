@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit flag-o-matic git-r3 toolchain-funcs
+inherit cmake git-r3
 
 DESCRIPTION="free implementation of Heroes of Might and Magic II game engine"
 HOMEPAGE="https://ihhub.github.io/fheroes2/"
@@ -15,6 +15,7 @@ LICENSE="GPL-2"
 SLOT="0"
 
 RDEPEND="
+	dev-games/libsmacker
 	dev-libs/tinyxml:0=
 	media-libs/libpng:0=
 	media-libs/libsdl2:0=
@@ -25,32 +26,22 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
-fheroes2_datadir() {
-	echo "/usr/share/${P}"
-}
+src_configure() {
+	local mycmakeargs=(
+		-DUSE_SYSTEM_TINYXML=ON
+		-DUSE_SYSTEM_TINYXML=ON
+	)
 
-src_prepare() {
-	default
-
-	sed 's/-O3//' -i src/Makefile || die
-
-	append-cxxflags -DCONFIGURE_FHEROES2_DATA=\"${EPREFIX}$(fheroes2_datadir)\"
-
-	tc-export AR CC CXX
-
-	export WITHOUT_BUNDLED_LIBS=YES
-	export FHEROES2_IMAGE_SUPPORT=YES
-
-	# TODO: patch inplace
-	export MAKEOPTS="${MAKEOPTS} AR=$(tc-getAR)"
+	cmake_src_configure
 }
 
 src_compile() {
-	emake
+	cmake_src_compile
 	emake -C files/lang
 }
 
 src_install() {
+	cmake_src_install
 	dodoc doc/README.txt doc/README_PSV.md
 
 	insinto $(fheroes2_datadir)/files/fonts
@@ -63,8 +54,6 @@ src_install() {
 	doins files/stats/*.xml
 
 	domo files/lang/*.mo
-
-	dobin fheroes2
 }
 
 pkg_postinst() {
