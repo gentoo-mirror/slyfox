@@ -26,6 +26,10 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
+fheroes2_datadir() {
+	echo "/usr/share/${P}"
+}
+
 src_configure() {
 	local mycmakeargs=(
 		-DUSE_SYSTEM_TINYXML=ON
