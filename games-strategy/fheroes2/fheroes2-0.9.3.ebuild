@@ -14,6 +14,7 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
+
 RDEPEND="
 	dev-games/libsmacker
 	dev-libs/tinyxml:0=
@@ -25,10 +26,6 @@ RDEPEND="
 	sys-libs/zlib:0=
 "
 DEPEND="${RDEPEND}"
-
-fheroes2_datadir() {
-	echo "/usr/share/${P}"
-}
 
 src_configure() {
 	local mycmakeargs=(
