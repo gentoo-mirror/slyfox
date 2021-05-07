@@ -38,6 +38,9 @@ src_configure() {
 		# RPATH at all.
 		-DCMAKE_INSTALL_RPATH_USE_LINK_PATH=ON
 		-DCMAKE_INSTALL_RPATH="${EPREFIX}"/usr/$(get_libdir)/vcmi
+
+		-DENABLE_PCH=OFF
+		-DENABLE_TEST=OFF
 	)
 
 	cmake_src_configure
