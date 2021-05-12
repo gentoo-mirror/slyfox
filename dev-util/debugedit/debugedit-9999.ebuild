@@ -25,6 +25,7 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	virtual/pkgconfig
 "
+REQUIRED_USE="${LUA_REQUIRED_USE}"
 
 src_prepare() {
 	default
