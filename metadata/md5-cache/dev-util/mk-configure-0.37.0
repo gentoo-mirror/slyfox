@@ -10,5 +10,5 @@ RDEPEND=sys-devel/bmake x11-misc/makedepend
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/project/mk-configure/mk-configure/mk-configure-0.37.0/mk-configure-0.37.0.tar.gz
-_eclasses_=multiprocessing	cac3169468f893670dac3e7cb940e045	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	d410501a125f99ffb560b0c523cd3d1e	bmake	37488162c150684600e31466cb42316b
+_eclasses_=multiprocessing	cac3169468f893670dac3e7cb940e045	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	ebdbaed22e873a5abe6205f41349b479	bmake	37488162c150684600e31466cb42316b
 _md5_=cbfcbe7ea0a383d6f10c6a2cf908809f
