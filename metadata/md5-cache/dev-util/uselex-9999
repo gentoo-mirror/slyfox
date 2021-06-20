@@ -8,5 +8,5 @@ LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=|| ( dev-lang/ruby:2.6 dev-lang/ruby:2.5 dev-lang/ruby:2.7 dev-lang/ruby:3.0 ) virtual/rubygems
 SLOT=0
-_eclasses_=ruby-utils	03dfa7f54d59d740c2964dc7256d2820	ruby-single	dd06178c43afcd54225a7d0fca6342a8	git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_eclasses_=ruby-utils	ca0692a9bcdc8aec6efe486e3d1d0218	ruby-single	dd06178c43afcd54225a7d0fca6342a8	git-r3	b8e8c92aa5fe8df7187e466138eb4e52
 _md5_=dfa02e60abdd00bf690c5c547504f429
