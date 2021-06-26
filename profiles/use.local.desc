@@ -2,6 +2,8 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+dev-libs/libffi:pax-kernel - Use PaX emulated trampolines, for we can't use PROT_EXEC.
+dev-libs/libffi:pax_kernel - Use PaX emulated trampolines, for we can't use PROT_EXEC. (use 'pax-kernel' instead)
 games-fps/quake3:mumble - Adds player-location (positional audio) support to VoIP
 games-fps/quake3:teamarena - Adds support for Team Arena expansion pack
 games-fps/quake3:voice - Adds VoIP support
