@@ -14,7 +14,7 @@ SRC_URI="https://github.com/libffi/libffi/releases/download/v${MY_PV}/${MY_P}.ta
 LICENSE="MIT"
 SLOT="0/8" # SONAME=libffi.so.8
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~x64-cygwin ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
-IUSE="debug pax-kernel pax_kernel static-libs test"
+IUSE="debug exec-static-trampoline pax-kernel pax_kernel static-libs test"
 
 RESTRICT="!test? ( test )"
 # If you are USE=pax_kernel user you really want USE=pax-kernel as well.
@@ -26,8 +26,6 @@ DEPEND=""
 BDEPEND="test? ( dev-util/dejagnu )"
 
 DOCS="ChangeLog* README.md"
-
-PATCHES=("${FILESDIR}"/${PN}-3.4_rc1-readelf.patch)
 
 S=${WORKDIR}/${MY_P}
 
@@ -59,6 +57,7 @@ multilib_src_configure() {
 		--includedir="${EPREFIX}"/usr/$(get_libdir)/${PN}/include \
 		--disable-multi-os-directory \
 		$(use_enable static-libs static) \
+		$(use_enable exec-static-trampoline exec-static-tramp) \
 		$(use_enable pax-kernel pax_emutramp) \
 		$(use_enable debug)
 }
