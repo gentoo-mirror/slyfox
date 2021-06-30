@@ -51,12 +51,6 @@ src_install() {
 	insinto $(fheroes2_datadir)/files/fonts
 	doins files/fonts/*.ttf
 
-	insinto $(fheroes2_datadir)/files/fonts
-	doins files/fonts/*.ttf
-
-	insinto $(fheroes2_datadir)/files/stats
-	doins files/stats/*.xml
-
 	domo files/lang/*.mo
 }
 
