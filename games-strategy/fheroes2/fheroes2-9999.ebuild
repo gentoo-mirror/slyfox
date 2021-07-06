@@ -30,6 +30,16 @@ fheroes2_datadir() {
 	echo "/usr/share/${P}"
 }
 
+src_prepare() {
+	cmake_src_prepare
+
+	# As there is no transliteration passed
+	# all russion strings get converted to
+	# empty lines or newlines. Let's just
+	# skip such localization.
+	rm files/lang/ru.po || die
+}
+
 src_configure() {
 	local mycmakeargs=(
 		-DUSE_SYSTEM_TINYXML=ON
