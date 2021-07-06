@@ -46,7 +46,7 @@ src_compile() {
 
 src_install() {
 	cmake_src_install
-	dodoc doc/README.txt doc/README_PSV.md
+	dodoc docs/README.txt docs/README_PSV.md
 
 	insinto $(fheroes2_datadir)/files/fonts
 	doins files/fonts/*.ttf
