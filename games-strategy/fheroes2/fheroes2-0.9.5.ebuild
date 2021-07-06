@@ -3,16 +3,16 @@
 
 EAPI=7
 
-inherit cmake git-r3
+inherit cmake
 
 DESCRIPTION="free implementation of Heroes of Might and Magic II game engine"
 HOMEPAGE="https://ihhub.github.io/fheroes2/"
 
-EGIT_REPO_URI="https://github.com/ihhub/fheroes2"
-#SRC_URI="https://github.com/ihhub/fheroes2/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/ihhub/fheroes2/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="GPL-2"
 
 SLOT="0"
+KEYWORDS="~amd64"
 
 RDEPEND="
 	dev-games/libsmacker
