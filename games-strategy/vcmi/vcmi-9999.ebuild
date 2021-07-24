@@ -17,6 +17,7 @@ SLOT="0"
 RESTRICT=test
 
 RDEPEND="
+	dev-lang/luajit
 	>=dev-libs/boost-1.48:=[threads]
 	dev-qt/qtcore:=
 	dev-qt/qtgui:=
