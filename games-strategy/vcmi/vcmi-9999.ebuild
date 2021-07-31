@@ -19,6 +19,7 @@ RESTRICT=test
 RDEPEND="
 	dev-lang/luajit
 	>=dev-libs/boost-1.48:=[threads]
+	dev-cpp/tbb
 	dev-qt/qtcore:=
 	dev-qt/qtgui:=
 	dev-qt/qtnetwork:=
