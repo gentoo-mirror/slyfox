@@ -18,7 +18,12 @@ DEPEND="${RDEPEND}"
 src_prepare() {
 	default
 
+	# https://sourceware.org/pipermail/debugedit/2021-August/000111.html
 	sed -i s/readelf/$(tc-getREADELF)/ tests/debugedit.at || die
+	sed -i s/readelf/$(tc-getREADELF)/ scripts/find-debuginfo.in || die
+
+	# disable dwarf-5 tests until https://sourceware.org/PR28161 is fixed
+	export ac_cv_gdwarf_5=no
 
 	eautoreconf
 }
