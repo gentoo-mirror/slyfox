@@ -20,3 +20,13 @@ src_prepare() {
 
 	eautoreconf
 }
+
+src_test() {
+	# debugedit's test suite relies on absolute paths
+	# being written to debug sections. CCACHE_BASEDIR
+	# makes them relative to increase cache hit. Let's
+	# disable it.
+	unset CCACHE_BASEDIR
+
+	default
+}
