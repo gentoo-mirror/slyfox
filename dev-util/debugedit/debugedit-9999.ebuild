@@ -18,8 +18,5 @@ DEPEND="${RDEPEND}"
 src_prepare() {
 	default
 
-	# disable dwarf-5 tests until https://sourceware.org/PR28161 is fixed
-	export ac_cv_gdwarf_5=no
-
 	eautoreconf
 }
