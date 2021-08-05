@@ -8,12 +8,21 @@
 
 inherit bmake
 
+# @ECLASS-VARIABLE: MKCMAKE
+# @DESCRIPTION:
+# Specify alternative `mkcmake` binary.
 : ${MKCMAKE:=mkcmake}
 
 DEPEND="dev-util/mk-configure"
 
 EXPORT_FUNCTIONS src_compile src_test src_install
 
+# @FUNCTION: mk-configure_run_tool
+# @USAGE: mk-configure_run_tool <bmake-arguments>
+# @DESCRIPTION:
+# this function will call ${BMAKE} with a set of standard
+# variables already prefilled to make Gentoo packaging
+# less repetitive.
 mk-configure_run_tool() {
 	local mkc_env_args=(
 		STRIPFLAG=
