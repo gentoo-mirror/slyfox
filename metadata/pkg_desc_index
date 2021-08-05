@@ -14,4 +14,3 @@ games-strategy/curseofwar 9999: An unusual RTS with ncurses or SDL backend.
 games-strategy/fheroes2 0.9.4 0.9.5 9999: free implementation of Heroes of Might and Magic II game engine
 games-strategy/vcmi 9999: open-source engine for Heroes of Might and Magic III
 media-fonts/terminus-ttf 4.47.0: TTF version of media-fonts/terminus-font
-sys-apps/sandbox 2.20 9999: sandbox'd LD_PRELOAD hack
