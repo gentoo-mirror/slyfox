@@ -1,7 +1,7 @@
 DEFINED_PHASES=configure install
 DEPEND=app-text/tesseract:= dev-qt/qtwidgets:5= dev-qt/qtcore:5= dev-qt/qtgui:5= dev-qt/qtnetwork:5= media-libs/leptonica:=
 DESCRIPTION=Editor of tesseract-ocr box files
-EAPI=7
+EAPI=8
 HOMEPAGE=http://zdenop.github.com/qt-box-editor/
 INHERIT=qmake-utils
 KEYWORDS=~amd64 ~x86
@@ -10,4 +10,4 @@ RDEPEND=app-text/tesseract:= dev-qt/qtwidgets:5= dev-qt/qtcore:5= dev-qt/qtgui:5
 SLOT=0
 SRC_URI=https://github.com/zdenop/qt-box-editor/archive/cba2929dabc6c715acd1a282ba161fee914c87f6.tar.gz -> qt-box-editor-1.11_p20190714.tar.gz
 _eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	qmake-utils	f5eb2f69fffe94292aaaf802fb21c8d1
-_md5_=5fc48d820543dbe94f7692eab5b4700e
+_md5_=fa58b6a304291c831859a7f64b0e5f85

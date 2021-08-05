@@ -1,7 +1,7 @@
 DEFINED_PHASES=compile configure install test
 DEPEND=sys-devel/bmake x11-misc/makedepend sys-devel/bmake
 DESCRIPTION=bmake-based Lightweight replacement for autotools
-EAPI=7
+EAPI=8
 HOMEPAGE=https://sourceforge.net/projects/mk-configure/
 INHERIT=bmake
 KEYWORDS=~amd64 ~x86
@@ -11,4 +11,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/project/mk-configure/mk-configure/mk-configure-0.37.0/mk-configure-0.37.0.tar.gz
 _eclasses_=multiprocessing	61c959fc55c15c00bbb1079d6a71370b	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	bmake	31ee822d7ce065d14281733dcadc8a3a
-_md5_=cbfcbe7ea0a383d6f10c6a2cf908809f
+_md5_=789bf482bd610ffbbd66f25ef0b1bc9c
