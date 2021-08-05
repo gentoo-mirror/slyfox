@@ -4,7 +4,7 @@
 EAPI=7
 
 : ${CMAKE_MAKEFILE_GENERATOR=ninja}
-PYTHON_COMPAT=( python3_{6..9} )
+PYTHON_COMPAT=( python3_{7..9} )
 inherit cmake llvm python-single-r1
 
 DESCRIPTION="Super-parallel Python port of the C-Reduce"
@@ -14,7 +14,7 @@ SRC_URI="
 
 LICENSE="UoI-NCSA"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 REQUIRED_USE=${PYTHON_REQUIRED_USE}
@@ -61,5 +61,5 @@ src_prepare() {
 
 src_test() {
 	cd "${BUILD_DIR}" || die
-	pytest -vv || die
+	epytest
 }
