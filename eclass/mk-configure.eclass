@@ -3,7 +3,7 @@
 
 # @ECLASS: mk-configure.eclass
 # @MAINTAINER:
-# Sergei Trofimovich <slyfox@gentoo.org>
+# Sergei Trofimovich <slyich@gmail.com>
 # @BLURB: for mk-configure based build systems
 
 inherit bmake

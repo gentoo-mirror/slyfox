@@ -3,7 +3,7 @@
 
 # @ECLASS: bmake.eclass
 # @MAINTAINER:
-# Sergei Trofimovich <slyfox@gentoo.org>
+# Sergei Trofimovich <slyich@gmail.com>
 # @BLURB: for bmake based build systems
 
 inherit multiprocessing toolchain-funcs
