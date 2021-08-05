@@ -12,7 +12,6 @@ SRC_URI="https://files.ax86.net/${PN}/files/$PV/${P}.zip"
 SLOT="0"
 LICENSE="OFL-1.1"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
 
 BDEPEND="app-arch/unzip"
 
