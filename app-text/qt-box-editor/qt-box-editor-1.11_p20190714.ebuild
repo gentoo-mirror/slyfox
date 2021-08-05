@@ -1,7 +1,7 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 inherit qmake-utils
 
 COMMIT=cba2929dabc6c715acd1a282ba161fee914c87f6
