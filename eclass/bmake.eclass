@@ -8,18 +8,47 @@
 
 inherit multiprocessing toolchain-funcs
 
+# @ECLASS-VARIABLE: BMAKE
+# @DESCRIPTION:
+# Specify alternative `bmake` binary.
 : ${BMAKE:=bmake}
+
+# @ECLASS-VARIABLE: BMAKE_NOPARALLEL
+# @DESCRIPTION:
+# Disable automatic parallelism inference.
+# Looks like mk-configure has parallelism problems.
 : ${BMAKE_NOPARALLEL:=yes-it-is-broken}
 
+# @ECLASS-VARIABLE: BMAKE_PREFIX
+# @DESCRIPTION:
+# Default prefix for bmake-based packages.
 : ${BMAKE_PREFIX:=${EPREFIX}/usr}
+
+# @ECLASS-VARIABLE: BMAKE_SYSCONFDIR
+# @DESCRIPTION:
+# Default config prefix for bmake-based packages.
 : ${BMAKE_SYSCONFDIR:=${EPREFIX}/etc}
+
+# @ECLASS-VARIABLE: BMAKE_MANDIR
+# @DESCRIPTION:
+# Default man prefix for bmake-based packages.
 : ${BMAKE_MANDIR:=${BMAKE_PREFIX}/share/man}
+
+# @ECLASS-VARIABLE: BMAKE_DOCDIR
+# @DESCRIPTION:
+# Default docs prefix for bmake-based packages.
 : ${BMAKE_DOCDIR:=${BMAKE_PREFIX}/share/doc/${PF}}
 
 DEPEND="sys-devel/bmake"
 
 EXPORT_FUNCTIONS src_compile src_test src_install
 
+# @FUNCTION: bmake_run_tool
+# @USAGE: bmake_run_tool <bmake-arguments>
+# @DESCRIPTION:
+# this function will call ${BMAKE} with a set of standard
+# variables already prefilled to make Gentoo packaging
+# less repetitive.
 bmake_run_tool() {
 	local phase_env_args=(
 		# bmake-based build systems are very sensitive
