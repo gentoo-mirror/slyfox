@@ -15,8 +15,6 @@ LICENSE="GPL-2"
 SLOT="0"
 
 RDEPEND="
-	dev-games/libsmacker
-	dev-libs/tinyxml:0=
 	media-libs/libpng:0=
 	media-libs/libsdl2:0=
 	media-libs/sdl2-image:0=
@@ -30,25 +28,6 @@ fheroes2_datadir() {
 	echo "/usr/share/${P}"
 }
 
-src_prepare() {
-	cmake_src_prepare
-
-	# As there is no transliteration passed
-	# all russion strings get converted to
-	# empty lines or newlines. Let's just
-	# skip such localization.
-	rm files/lang/ru.po || die
-}
-
-src_configure() {
-	local mycmakeargs=(
-		-DUSE_SYSTEM_TINYXML=ON
-		-DUSE_SYSTEM_TINYXML=ON
-	)
-
-	cmake_src_configure
-}
-
 src_compile() {
 	cmake_src_compile
 	emake -C files/lang
@@ -57,9 +36,6 @@ src_compile() {
 src_install() {
 	cmake_src_install
 	dodoc docs/README.txt docs/README_PSV.md
-
-	insinto $(fheroes2_datadir)/files/fonts
-	doins files/fonts/*.ttf
 
 	domo files/lang/*.mo
 }
