@@ -2,6 +2,10 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+app-misc/mc:edit - Compile and install the mcedit application
+app-misc/mc:sftp - Add support for sftp (uses net-libs/libssh2 for it).
+app-misc/mc:slang - Use sys-libs/slang instead of sys-libs/ncurses.
+app-misc/mc:xdg - Toggles mc's config dir location. Enable for $XDG_CONFIG_HOME/mc, disable for $HOME/.mc
 games-fps/quake3:mumble - Adds player-location (positional audio) support to VoIP
 games-fps/quake3:teamarena - Adds support for Team Arena expansion pack
 games-fps/quake3:voice - Adds VoIP support
