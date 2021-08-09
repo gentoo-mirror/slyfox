@@ -9,3 +9,5 @@ app-misc/mc:xdg - Toggles mc's config dir location. Enable for $XDG_CONFIG_HOME/
 games-fps/quake3:mumble - Adds player-location (positional audio) support to VoIP
 games-fps/quake3:teamarena - Adds support for Team Arena expansion pack
 games-fps/quake3:voice - Adds VoIP support
+sys-libs/libunwind:debug-frame - Adds support for DWARF .debug_frame section: Use the information from this section if available
+sys-libs/libunwind:libatomic - Use libatomic instead of builtin atomic operations
