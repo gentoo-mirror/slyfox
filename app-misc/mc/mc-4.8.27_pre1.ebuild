@@ -1,6 +1,8 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# ::slyfox note: forked ebuild to pull in prerelease for testing.
+
 EAPI=8
 
 inherit flag-o-matic
