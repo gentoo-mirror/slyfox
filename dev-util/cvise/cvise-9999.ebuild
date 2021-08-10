@@ -1,6 +1,9 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# ::slyfox note: forked ebuild to get live version. While at it
+# fix missing dependencies.
+
 EAPI=7
 
 : ${CMAKE_MAKEFILE_GENERATOR=ninja}
