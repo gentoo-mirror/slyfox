@@ -14,4 +14,4 @@ RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://www.midnight-commander.org/nopaste/tarball/mc-4.8.27-pre1.tar.xz
 _eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5
-_md5_=d0c7c0dc3e5e3cb9b2a7a9e17c8eae42
+_md5_=0221e11d2cf7314c1c993b2e5f6b4a74
