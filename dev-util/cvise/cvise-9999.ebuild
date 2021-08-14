@@ -1,13 +1,15 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-# ::slyfox note: forked ebuild to get live version. While at it
-# fix missing dependencies.
+# ::slyfox notes:
+# - forked ebuild to get live version
+# - while at itfix missing dependencies
+# - while at it added python-3.10 support
 
 EAPI=7
 
 : ${CMAKE_MAKEFILE_GENERATOR=ninja}
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{7..10} )
 inherit cmake llvm python-single-r1 git-r3 toolchain-funcs
 
 DESCRIPTION="Super-parallel Python port of the C-Reduce"
