@@ -1,7 +1,8 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-# ::slyfox note: forked ebuild to pull in prerelease for testing.
+# ::slyfox note:
+# - fresh release
 
 EAPI=8
 
@@ -11,7 +12,7 @@ MY_P=${P/_/-}
 
 DESCRIPTION="GNU Midnight Commander is a text based file manager"
 HOMEPAGE="https://midnight-commander.org"
-SRC_URI="https://www.midnight-commander.org/nopaste/tarball/${MY_P}.tar.xz"
+SRC_URI="http://ftp.midnight-commander.org/${MY_P}.tar.xz"
 
 LICENSE="GPL-3"
 SLOT="0"
