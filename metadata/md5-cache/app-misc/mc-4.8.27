@@ -12,6 +12,6 @@ RDEPEND=>=dev-libs/glib-2.26.0:2 gpm? ( sys-libs/gpm ) kernel_linux? ( sys-fs/e2
 REQUIRED_USE=spell? ( edit )
 RESTRICT=!test? ( test )
 SLOT=0
-SRC_URI=https://www.midnight-commander.org/nopaste/tarball/mc-4.8.27-pre1.tar.xz
+SRC_URI=http://ftp.midnight-commander.org/mc-4.8.27.tar.xz
 _eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5
-_md5_=0221e11d2cf7314c1c993b2e5f6b4a74
+_md5_=7f140156fc817cad9456d625711a86cd
