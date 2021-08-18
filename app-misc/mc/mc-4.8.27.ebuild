@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 # ::slyfox note:
-# - fresh release
+# - fresh release: https://bugs.gentoo.org/808606
 
 EAPI=8
 
