@@ -15,3 +15,4 @@ games-strategy/vcmi 9999: open-source engine for Heroes of Might and Magic III
 media-fonts/terminus-ttf 4.47.0: TTF version of media-fonts/terminus-font
 sys-apps/texinfo 6.7 6.8 6.8-r1: The GNU info program and utilities
 sys-libs/libunwind 1.5.0-r1 1.6_rc1: Portable and efficient API to determine the call-chain of a program
+x11-wm/i3 4.19.1 4.19.2: An improved dynamic tiling window manager

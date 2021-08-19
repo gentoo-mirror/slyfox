@@ -16,3 +16,4 @@ games-fps/quake3:voice - Adds VoIP support
 sys-apps/texinfo:standalone - Build standalone version that survives all Portage bugs
 sys-libs/libunwind:debug-frame - Adds support for DWARF .debug_frame section: Use the information from this section if available
 sys-libs/libunwind:libatomic - Use libatomic instead of builtin atomic operations
+x11-wm/i3:doc - Build and install the HTML documentation and regenerate the man pages
