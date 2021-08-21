@@ -2,6 +2,7 @@ app-misc/mc 4.8.26-r5 4.8.27: GNU Midnight Commander is a text based file manage
 app-text/qt-box-editor 1.11_p20190714 9999: Editor of tesseract-ocr box files
 dev-games/clunk 9999: real-time binaural sound generation library (vangers-friendly)
 dev-scheme/guile 3.0.7 3.0.7-r1: GNU Ubiquitous Intelligent Language for Extensions
+dev-util/ccache 4.3-r3 4.4: fast compiler cache
 dev-util/cvise 2.3.0 9999: Super-parallel Python port of the C-Reduce
 dev-util/debugedit 9999: debug source path manipulation tool
 dev-util/elfx86exts 0.4.3: decode x86 binaries and print out which instruction set extensions they use

@@ -10,6 +10,7 @@ dev-scheme/guile:debug-malloc - Include malloc debugging code
 dev-scheme/guile:deprecated - Enable deprecated features
 dev-scheme/guile:networking - Include networking interfaces
 dev-scheme/guile:regex - Include regular expression interfaces
+dev-util/ccache:static-c++ - Avoid dynamic dependency on gcc's libstdc++.
 games-fps/quake3:mumble - Adds player-location (positional audio) support to VoIP
 games-fps/quake3:teamarena - Adds support for Team Arena expansion pack
 games-fps/quake3:voice - Adds VoIP support
