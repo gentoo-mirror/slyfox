@@ -1,3 +1,4 @@
+app-emulation/qemu 6.0.0-r52 6.1.0: QEMU + Kernel-based Virtual Machine userland tools
 app-misc/mc 4.8.26-r5 4.8.27: GNU Midnight Commander is a text based file manager
 app-text/qt-box-editor 1.11_p20190714 9999: Editor of tesseract-ocr box files
 dev-games/clunk 9999: real-time binaural sound generation library (vangers-friendly)
