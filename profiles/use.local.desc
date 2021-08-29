@@ -43,19 +43,13 @@ app-emulation/qemu:vte - Enable terminal support (x11-libs/vte) in the GTK+ inte
 app-emulation/qemu:xattr - Add support for getting and setting POSIX extended attributes, through sys-apps/attr. Requisite for the virtfs backend.
 app-emulation/qemu:xen - Enables support for Xen backends
 app-emulation/qemu:xfs - Support xfsctl() notification and syncing for XFS backed virtual disks.
-app-misc/mc:edit - Compile and install the mcedit application
-app-misc/mc:sftp - Add support for sftp (uses net-libs/libssh2 for it).
-app-misc/mc:slang - Use sys-libs/slang instead of sys-libs/ncurses.
-app-misc/mc:xdg - Toggles mc's config dir location. Enable for $XDG_CONFIG_HOME/mc, disable for $HOME/.mc
 dev-scheme/guile:debug-malloc - Include malloc debugging code
 dev-scheme/guile:deprecated - Enable deprecated features
 dev-scheme/guile:networking - Include networking interfaces
 dev-scheme/guile:regex - Include regular expression interfaces
-dev-util/ccache:static-c++ - Avoid dynamic dependency on gcc's libstdc++.
 games-fps/quake3:mumble - Adds player-location (positional audio) support to VoIP
 games-fps/quake3:teamarena - Adds support for Team Arena expansion pack
 games-fps/quake3:voice - Adds VoIP support
 sys-apps/texinfo:standalone - Build standalone version that survives all Portage bugs
 sys-libs/libunwind:debug-frame - Adds support for DWARF .debug_frame section: Use the information from this section if available
 sys-libs/libunwind:libatomic - Use libatomic instead of builtin atomic operations
-x11-wm/i3:doc - Build and install the HTML documentation and regenerate the man pages

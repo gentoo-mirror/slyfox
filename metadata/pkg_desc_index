@@ -1,9 +1,7 @@
 app-emulation/qemu 6.0.0-r52 6.1.0: QEMU + Kernel-based Virtual Machine userland tools
-app-misc/mc 4.8.26-r5 4.8.27: GNU Midnight Commander is a text based file manager
 app-text/qt-box-editor 1.11_p20190714 9999: Editor of tesseract-ocr box files
 dev-games/clunk 9999: real-time binaural sound generation library (vangers-friendly)
 dev-scheme/guile 3.0.7 3.0.7-r1: GNU Ubiquitous Intelligent Language for Extensions
-dev-util/ccache 4.3-r3 4.4: fast compiler cache
 dev-util/cvise 2.3.0 9999: Super-parallel Python port of the C-Reduce
 dev-util/debugedit 9999: debug source path manipulation tool
 dev-util/elfx86exts 0.4.3: decode x86 binaries and print out which instruction set extensions they use
@@ -17,4 +15,3 @@ games-strategy/vcmi 9999: open-source engine for Heroes of Might and Magic III
 media-fonts/terminus-ttf 4.47.0: TTF version of media-fonts/terminus-font
 sys-apps/texinfo 6.7 6.8 6.8-r1: The GNU info program and utilities
 sys-libs/libunwind 1.5.0-r1 1.6_rc1 1.6.0_rc2: Portable and efficient API to determine the call-chain of a program
-x11-wm/i3 4.19.1 4.19.2: An improved dynamic tiling window manager
