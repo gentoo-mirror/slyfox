@@ -12,10 +12,12 @@ LICENSE="BSD-2"
 SLOT="0"
 #KEYWORDS="~amd64 ~x86"
 
+# TODO: unbundle libraries from 'ThirdParty'
 RDEPEND="sys-libs/ncurses:="
 DEPEND="${RDEPEND}"
 
 PATCHES=(
 	"${FILESDIR}"/${P}-headers.patch
 	"${FILESDIR}"/${P}-ncurses.patch
+	"${FILESDIR}"/${P}-bin-path.patch
 )
