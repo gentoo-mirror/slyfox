@@ -52,5 +52,17 @@ games-fps/quake3:mumble - Adds player-location (positional audio) support to VoI
 games-fps/quake3:teamarena - Adds support for Team Arena expansion pack
 games-fps/quake3:voice - Adds VoIP support
 sys-apps/texinfo:standalone - Build standalone version that survives all Portage bugs
+sys-apps/util-linux:audit - Use sys-process/audit to emit audit messages about system changes
+sys-apps/util-linux:caps - build setpriv helper (run programs with diff capabilities)
+sys-apps/util-linux:cramfs - build mkfs/fsck helpers for cramfs filesystems
+sys-apps/util-linux:cryptsetup - Use sys-fs/cryptsetup to have built-in dm-verity in libmount
+sys-apps/util-linux:fdformat - build fdformat (floppy disk format)
+sys-apps/util-linux:hardlink - build hardlink program
+sys-apps/util-linux:kill - build the kill program
+sys-apps/util-linux:logger - build the logger program
+sys-apps/util-linux:pam - build runuser helper
+sys-apps/util-linux:su - build the su program
+sys-apps/util-linux:suid - install mount/umount as setuid so non-root users may mount/umount devices, and wall/write as setgid so non-root users can notify other users
+sys-apps/util-linux:tty-helpers - install the mesg/wall/write tools for talking to local users
 sys-libs/libunwind:debug-frame - Adds support for DWARF .debug_frame section: Use the information from this section if available
 sys-libs/libunwind:libatomic - Use libatomic instead of builtin atomic operations

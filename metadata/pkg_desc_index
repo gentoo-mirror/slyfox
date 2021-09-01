@@ -15,5 +15,6 @@ games-strategy/fheroes2 0.9.5 0.9.6 9999: free implementation of Heroes of Might
 games-strategy/vcmi 9999: open-source engine for Heroes of Might and Magic III
 media-fonts/terminus-ttf 4.47.0: TTF version of media-fonts/terminus-font
 sys-apps/texinfo 6.7 6.8 6.8-r1: The GNU info program and utilities
+sys-apps/util-linux 2.37.2 2.37.2-r1: Various useful Linux utilities
 sys-kernel/linux-headers 5.13 5.14: Linux system headers
 sys-libs/libunwind 1.5.0-r1 1.6_rc1 1.6.0_rc2: Portable and efficient API to determine the call-chain of a program
