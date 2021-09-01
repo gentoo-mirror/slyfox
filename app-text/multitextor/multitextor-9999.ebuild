@@ -12,7 +12,7 @@ LICENSE="BSD-2"
 SLOT="0"
 #KEYWORDS="~amd64 ~x86"
 
-RDEPEND=""
+RDEPEND="sys-libs/ncurses:="
 DEPEND="${RDEPEND}"
 
 PATCHES=(
