@@ -17,7 +17,5 @@ RDEPEND="sys-libs/ncurses:="
 DEPEND="${RDEPEND}"
 
 PATCHES=(
-	"${FILESDIR}"/${P}-headers.patch
-	"${FILESDIR}"/${P}-ncurses.patch
 	"${FILESDIR}"/${P}-bin-path.patch
 )
