@@ -1,4 +1,5 @@
 app-emulation/qemu 6.0.0-r52 6.1.0: QEMU + Kernel-based Virtual Machine userland tools
+app-text/multitextor 9999: Editor of tesseract-ocr box files
 app-text/qt-box-editor 1.11_p20190714 9999: Editor of tesseract-ocr box files
 dev-games/clunk 9999: real-time binaural sound generation library (vangers-friendly)
 dev-scheme/guile 3.0.7 3.0.7-r1: GNU Ubiquitous Intelligent Language for Extensions
