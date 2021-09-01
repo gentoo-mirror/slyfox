@@ -1,0 +1,20 @@
+--- a/Editor/inc/EditorCmd.h
++++ b/Editor/inc/EditorCmd.h
+@@ -29,6 +29,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ #include "Console/Types.h"
+ #include "Console/KeyCodes.h"
+ 
++#include <string>
+ #include <unordered_map>
+ 
+ using namespace _Console;
+--- a/Utils/inc/utils/IntervalMap.h
++++ b/Utils/inc/utils/IntervalMap.h
+@@ -26,6 +26,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+ #pragma once
+ 
++#include <limits>
+ #include <map>
+ 
+ namespace _Utils
