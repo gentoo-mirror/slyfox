@@ -10,5 +10,5 @@ LICENSE=GPL-2
 PROPERTIES=live
 RDEPEND=opengl? ( virtual/opengl media-libs/libsdl[sound,video,joystick,X,opengl] virtual/jpeg:0 openal? ( media-libs/openal ) vorbis? ( media-libs/libogg media-libs/libvorbis ) voice? ( media-libs/speex ) curl? ( net-misc/curl ) ) !dedicated? ( virtual/opengl media-libs/libsdl[sound,video,joystick,X,opengl] virtual/jpeg:0 openal? ( media-libs/openal ) vorbis? ( media-libs/libogg media-libs/libvorbis ) voice? ( media-libs/speex ) curl? ( net-misc/curl ) ) opengl? ( voice? ( mumble? ( media-sound/mumble ) ) ) !dedicated? ( voice? ( mumble? ( media-sound/mumble ) ) )
 SLOT=0
-_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4b66d835ec72e021e359bb81eacfe988	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4b66d835ec72e021e359bb81eacfe988	flag-o-matic	d5e1306543bc457213f68bb18f830d14	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
 _md5_=fbb7bf758ac4a423ac6a83d7f26587c5
