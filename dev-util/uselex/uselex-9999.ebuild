@@ -3,7 +3,7 @@
 
 EAPI=8
 
-USE_RUBY="ruby25 ruby26 ruby27 ruby30"
+USE_RUBY="ruby26 ruby27 ruby30"
 
 inherit ruby-single git-r3
 
