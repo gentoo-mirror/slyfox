@@ -1,20 +1,11 @@
-app-emulation/qemu 6.0.0-r52 6.1.0: QEMU + Kernel-based Virtual Machine userland tools
 app-text/multitextor 9999: Editor of tesseract-ocr box files
-app-text/qt-box-editor 1.11_p20190714 9999: Editor of tesseract-ocr box files
+app-text/qt-box-editor 9999: Editor of tesseract-ocr box files
 dev-games/clunk 9999: real-time binaural sound generation library (vangers-friendly)
-dev-scheme/guile 3.0.7 3.0.7-r1: GNU Ubiquitous Intelligent Language for Extensions
-dev-util/cvise 2.3.0 9999: Super-parallel Python port of the C-Reduce
-dev-util/debugedit 9999: debug source path manipulation tool
 dev-util/elfx86exts 0.4.3: decode x86 binaries and print out which instruction set extensions they use
 dev-util/flameprof 0.4: cProfile flamegraph generator
 dev-util/uselex 9999: look for USEless EXports in object files
 games-fps/quake3 9999: Quake III Arena - 3rd installment of the classic id 3D first-person shooter
 games-misc/vangers 9999: Video game combines elements of the racing and role-playing genres.
 games-strategy/curseofwar 9999: An unusual RTS with ncurses or SDL backend.
-games-strategy/fheroes2 0.9.5 0.9.6 9999: free implementation of Heroes of Might and Magic II game engine
+games-strategy/fheroes2 9999: free implementation of Heroes of Might and Magic II game engine
 games-strategy/vcmi 9999: open-source engine for Heroes of Might and Magic III
-media-fonts/terminus-ttf 4.47.0: TTF version of media-fonts/terminus-font
-sys-apps/texinfo 6.7 6.8 6.8-r1: The GNU info program and utilities
-sys-apps/util-linux 2.37.2 2.37.2-r1: Various useful Linux utilities
-sys-kernel/linux-headers 5.13 5.14: Linux system headers
-sys-libs/libunwind 1.5.0-r1 1.6_rc1 1.6.0_rc2: Portable and efficient API to determine the call-chain of a program
