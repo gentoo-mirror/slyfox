@@ -1,7 +1,7 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit cmake flag-o-matic git-r3 toolchain-funcs
 
@@ -18,7 +18,7 @@ RESTRICT=test
 
 RDEPEND="
 	dev-lang/luajit
-	>=dev-libs/boost-1.48:=[threads]
+	>=dev-libs/boost-1.48:=
 	dev-cpp/tbb
 	dev-qt/qtcore:=
 	dev-qt/qtgui:=
