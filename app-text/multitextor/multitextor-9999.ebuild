@@ -4,7 +4,7 @@
 EAPI=8
 inherit cmake git-r3
 
-DESCRIPTION="Editor of tesseract-ocr box files"
+DESCRIPTION=" Multiplatform command line text editor."
 HOMEPAGE="https://github.com/vikonix/multitextor"
 EGIT_REPO_URI="https://github.com/vikonix/multitextor.git"
 
@@ -13,7 +13,10 @@ SLOT="0"
 #KEYWORDS="~amd64 ~x86"
 
 # TODO: unbundle libraries from 'ThirdParty'
-RDEPEND="sys-libs/ncurses:="
+RDEPEND="
+	sys-libs/gpm:=
+	sys-libs/ncurses:=
+"
 DEPEND="${RDEPEND}"
 
 PATCHES=(
