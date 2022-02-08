@@ -1,4 +1,4 @@
-app-text/multitextor 9999: Editor of tesseract-ocr box files
+app-text/multitextor 9999: Multiplatform command line text editor.
 app-text/qt-box-editor 9999: Editor of tesseract-ocr box files
 dev-games/clunk 9999: real-time binaural sound generation library (vangers-friendly)
 dev-util/elfx86exts 0.4.3: decode x86 binaries and print out which instruction set extensions they use
