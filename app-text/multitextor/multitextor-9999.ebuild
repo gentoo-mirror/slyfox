@@ -4,7 +4,7 @@
 EAPI=8
 inherit cmake git-r3
 
-DESCRIPTION=" Multiplatform command line text editor."
+DESCRIPTION="Multiplatform command line text editor."
 HOMEPAGE="https://github.com/vikonix/multitextor"
 EGIT_REPO_URI="https://github.com/vikonix/multitextor.git"
 
