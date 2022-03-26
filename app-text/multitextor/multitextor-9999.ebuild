@@ -4,7 +4,7 @@
 EAPI=8
 inherit cmake git-r3
 
-DESCRIPTION=" Multiplatform command line text editor."
+DESCRIPTION="Multiplatform command line text editor."
 HOMEPAGE="https://github.com/vikonix/multitextor"
 EGIT_REPO_URI="https://github.com/vikonix/multitextor.git"
 
@@ -18,3 +18,11 @@ RDEPEND="
 	sys-libs/ncurses:=
 "
 DEPEND="${RDEPEND}"
+
+src_prepare() {
+	cmake_src_prepare
+
+	# Workaround missing -ltinfo:
+	#    https://bugs.gentoo.org/836155
+	sed -i -e 's/${CURSES_LIBRARY}/& -ltinfo/' Console/CMakeLists.txt || die
+}
