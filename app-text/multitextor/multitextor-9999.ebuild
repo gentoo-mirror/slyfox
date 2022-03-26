@@ -18,3 +18,11 @@ RDEPEND="
 	sys-libs/ncurses:=
 "
 DEPEND="${RDEPEND}"
+
+src_prepare() {
+	cmake_src_prepare
+
+	# Workaround missing -ltinfo:
+	#    https://bugs.gentoo.org/836155
+	sed -i -e 's/${CURSES_LIBRARY}/& -ltinfo/' Console/CMakeLists.txt || die
+}
