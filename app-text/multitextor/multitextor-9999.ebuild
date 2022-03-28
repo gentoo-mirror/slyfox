@@ -7,7 +7,6 @@ inherit cmake git-r3
 DESCRIPTION="Multiplatform command line text editor."
 HOMEPAGE="https://github.com/vikonix/multitextor"
 EGIT_REPO_URI="https://github.com/vikonix/multitextor.git"
-SRC_URI="https://patch-diff.githubusercontent.com/raw/vikonix/multitextor/pull/22.patch -> ${P}-tinfo.patch"
 
 LICENSE="BSD-2"
 SLOT="0"
@@ -19,5 +18,3 @@ RDEPEND="
 	sys-libs/ncurses:=
 "
 DEPEND="${RDEPEND}"
-
-PATCHES=(${DISTDIR}/${P}-tinfo.patch)
