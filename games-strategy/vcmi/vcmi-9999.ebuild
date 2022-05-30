@@ -34,6 +34,10 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
+PATCHES=(
+	${FILESDIR}/workaround-targets.patch
+)
+
 src_configure() {
 	local mycmakeargs=(
 		# Stole from debian/control. Defaults do not have
