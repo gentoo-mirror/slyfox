@@ -1,0 +1,18 @@
+Without the change Gentoo build fails to find boost. Not clear why yet.
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -126,11 +126,11 @@ set(CMAKE_VISIBILITY_INLINES_HIDDEN 1)
+ 
+ #Global fallback mapping
+ # RelWithDebInfo falls back to Release, then MinSizeRel
+-set(CMAKE_MAP_IMPORTED_CONFIG_RELWITHDEBINFO RelWithDebInfo Release MinSizeRel "")
++#set(CMAKE_MAP_IMPORTED_CONFIG_RELWITHDEBINFO RelWithDebInfo Release MinSizeRel "")
+ # MinSizeRel falls back to Release, then RelWithDebInfo
+-set(CMAKE_MAP_IMPORTED_CONFIG_MINSIZEREL MinSizeRel Release RelWithDebInfo "")
++#set(CMAKE_MAP_IMPORTED_CONFIG_MINSIZEREL MinSizeRel Release RelWithDebInfo "")
+ # Release falls back to RelWithDebInfo, then MinSizeRel
+-set(CMAKE_MAP_IMPORTED_CONFIG_RELEASE Release RelWithDebInfo MinSizeRel "")
++#set(CMAKE_MAP_IMPORTED_CONFIG_RELEASE Release RelWithDebInfo MinSizeRel "")
+ 
+ if(APPLE)
+ 	set(CMAKE_MACOSX_RPATH 0)
