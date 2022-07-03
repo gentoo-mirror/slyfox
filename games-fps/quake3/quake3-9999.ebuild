@@ -19,7 +19,7 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
 # "smp" is omitted, because currently it does not work.
-IUSE="dedicated opengl teamarena +openal curl vorbis voice mumble"
+IUSE="dedicated opengl teamarena +openal curl vorbis voice"
 
 UIDEPEND="virtual/opengl
 	media-libs/libsdl[sound,video,joystick,X,opengl]
@@ -35,12 +35,7 @@ UIDEPEND="virtual/opengl
 DEPEND="opengl? ( ${UIDEPEND} )
 	!dedicated? ( ${UIDEPEND} )
 "
-UIRDEPEND="voice? ( mumble? ( media-sound/mumble ) )
-"
-RDEPEND="${DEPEND}
-	opengl? ( ${UIRDEPEND} )
-	!dedicated? ( ${UIRDEPEND} )
-"
+RDEPEND="${DEPEND}"
 
 if [[ "${PV}" != 9999* ]] ; then
 	S="${WORKDIR}/${MY_P}"
@@ -94,7 +89,6 @@ src_compile() {
 		USE_INTERNAL_SPEEX=0 \
 		USE_INTERNAL_ZLIB=0 \
 		USE_LOCAL_HEADERS=0 \
-		USE_MUMBLE=$(buildit mumble) \
 		USE_OPENAL=$(buildit openal) \
 		USE_OPENAL_DLOPEN=0 \
 		USE_VOIP=$(buildit voice)
