@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake flag-o-matic git-r3 toolchain-funcs
+inherit cmake git-r3
 
 DESCRIPTION="open-source engine for Heroes of Might and Magic III"
 HOMEPAGE="https://vcmi.eu/"
