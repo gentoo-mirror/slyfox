@@ -1,9 +1,9 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit cmake flag-o-matic git-r3 toolchain-funcs
+inherit cmake git-r3
 
 DESCRIPTION="open-source engine for Heroes of Might and Magic III"
 HOMEPAGE="https://vcmi.eu/"
@@ -35,7 +35,7 @@ RDEPEND="
 DEPEND="${RDEPEND}"
 
 PATCHES=(
-	${FILESDIR}/workaround-targets.patch
+	"${FILESDIR}"/workaround-targets.patch
 )
 
 src_configure() {
