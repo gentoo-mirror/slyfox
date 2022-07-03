@@ -23,7 +23,7 @@ IUSE="dedicated opengl teamarena +openal curl vorbis voice mumble"
 
 UIDEPEND="virtual/opengl
 	media-libs/libsdl[sound,video,joystick,X,opengl]
-	virtual/jpeg:0
+	media-libs/libjpeg-turbo:0
 	openal? ( media-libs/openal )
 	vorbis? (
 		media-libs/libogg
