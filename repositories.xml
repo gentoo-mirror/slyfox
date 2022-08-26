@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE repositories SYSTEM "https://www.gentoo.org/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>slyfox</name>
+    <description lang="en">slyfox's ebuild den</description>
+    <homepage>https://github.com/trofi/slyfox-gentoo</homepage>
+    <owner type="person">
+      <email>slyich@gmail.com</email>
+      <name>Sergei Trofimovich</name>
+    </owner>
+    <source type="git">https://github.com/trofi/slyfox-gentoo.git</source>
+    <feed>https://github.com/trofi/slyfox-gentoo/commits/master.atom</feed>
+  </repo>
+</repositories>

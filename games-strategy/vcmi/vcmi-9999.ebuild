@@ -56,4 +56,5 @@ pkg_postinst() {
 	einfo "To start check out https://wiki.vcmi.eu/Installation_on_Linux#Automated_install"
 	einfo "Howto:"
 	einfo " - add 'Data', 'Maps', 'Mp3' to ~/.local/share/vcmi"
+	einfo " - run 'vcmilauncher'"
 }

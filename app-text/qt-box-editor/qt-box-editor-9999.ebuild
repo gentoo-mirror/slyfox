@@ -13,6 +13,8 @@ LICENSE="GPL-2"
 SLOT="0"
 #KEYWORDS="~amd64 ~x86"
 
+# No tesseract-5 support upstream yet:
+#   https://github.com/zdenop/qt-box-editor/issues/86
 RDEPEND="
 	<app-text/tesseract-5:=
 	dev-qt/qtwidgets:5=
