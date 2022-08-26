@@ -10,7 +10,6 @@
       <name>Sergei Trofimovich</name>
     </owner>
     <source type="git">https://github.com/trofi/slyfox-gentoo.git</source>
-    <source type="git">git+ssh://git@github.com/trofi/slyfox-gentoo.git</source>
     <feed>https://github.com/trofi/slyfox-gentoo/commits/master.atom</feed>
   </repo>
 </repositories>
