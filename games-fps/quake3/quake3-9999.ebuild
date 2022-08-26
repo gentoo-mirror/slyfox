@@ -3,27 +3,21 @@
 
 EAPI=8
 
-inherit desktop flag-o-matic toolchain-funcs
-[[ "${PV}" == 9999* ]] && inherit git-r3
-
-MY_PN="ioquake3"
-MY_PV="${PV}"
-MY_P="${MY_PN}-${MY_PV}"
+inherit desktop flag-o-matic git-r3 toolchain-funcs
 
 DESCRIPTION="Quake III Arena - 3rd installment of the classic id 3D first-person shooter"
 HOMEPAGE="https://ioquake3.org/"
-[[ "${PV}" != 9999* ]] && SRC_URI="https://ioquake3.org/files/${MY_PV}/${MY_P}.tar.bz2"
 EGIT_REPO_URI="https://github.com/ioquake/ioq3.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+
 # "smp" is omitted, because currently it does not work.
 IUSE="dedicated opengl teamarena +openal curl vorbis voice"
 
 UIDEPEND="virtual/opengl
 	media-libs/libsdl[sound,video,joystick,X,opengl]
-	media-libs/libjpeg-turbo:0
+	media-libs/libjpeg-turbo:0=
 	openal? ( media-libs/openal )
 	vorbis? (
 		media-libs/libogg
@@ -36,10 +30,6 @@ DEPEND="opengl? ( ${UIDEPEND} )
 	!dedicated? ( ${UIDEPEND} )
 "
 RDEPEND="${DEPEND}"
-
-if [[ "${PV}" != 9999* ]] ; then
-	S="${WORKDIR}/${MY_P}"
-fi
 
 my_arch() {
 	case "${ARCH}" in
