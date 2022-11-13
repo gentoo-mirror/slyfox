@@ -9,4 +9,7 @@
 		<flag name="teamarena">Adds support for Team Arena expansion pack</flag>
 		<flag name="voice">Adds VoIP support</flag>
 	</use>
+	<upstream>
+		<remote-id type="github">ioquake/ioq3</remote-id>
+	</upstream>
 </pkgmetadata>
