@@ -5,4 +5,7 @@
 		<email>slyich@gmail.com</email>
 		<name>Sergei Trofimovich</name>
 	</maintainer>
+	<upstream>
+		<remote-id type="github">KranX/Vangers</remote-id>
+	</upstream>
 </pkgmetadata>
