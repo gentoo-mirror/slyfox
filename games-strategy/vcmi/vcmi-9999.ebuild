@@ -3,10 +3,6 @@
 
 EAPI=8
 
-# Without 'emake' build fails as:
-#   ninja: error: 'Boost::thread-NOTFOUND', needed by 'bin/libvcmi.so',
-#     missing and no known rule to make it
-CMAKE_MAKEFILE_GENERATOR=emake
 inherit cmake git-r3
 
 DESCRIPTION="open-source engine for Heroes of Might and Magic III"
