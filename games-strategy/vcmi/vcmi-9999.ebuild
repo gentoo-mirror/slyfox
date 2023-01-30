@@ -43,9 +43,6 @@ src_configure() {
 
 		-DENABLE_PCH=OFF
 		-DENABLE_TEST=OFF
-
-		# Too much spam
-		-Wno-dev
 	)
 
 	cmake_src_configure
