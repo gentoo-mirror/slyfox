@@ -3,6 +3,10 @@
 
 EAPI=8
 
+# Without 'emake' build fails as:
+#   ninja: error: 'Boost::thread-NOTFOUND', needed by 'bin/libvcmi.so',
+#     missing and no known rule to make it
+CMAKE_MAKEFILE_GENERATOR=emake
 inherit cmake git-r3
 
 DESCRIPTION="open-source engine for Heroes of Might and Magic III"
@@ -20,6 +24,7 @@ RDEPEND="
 	dev-lang/luajit
 	>=dev-libs/boost-1.48:=
 	dev-cpp/tbb
+	dev-qt/linguist-tools:=
 	dev-qt/qtcore:=
 	dev-qt/qtgui:=
 	dev-qt/qtnetwork:=
@@ -30,13 +35,8 @@ RDEPEND="
 	media-libs/sdl2-mixer:=
 	media-libs/sdl2-ttf:=
 	sys-libs/zlib:=[minizip]
-
 "
 DEPEND="${RDEPEND}"
-
-PATCHES=(
-	"${FILESDIR}"/workaround-targets.patch
-)
 
 src_configure() {
 	local mycmakeargs=(
@@ -47,6 +47,9 @@ src_configure() {
 
 		-DENABLE_PCH=OFF
 		-DENABLE_TEST=OFF
+
+		# Too much spam
+		-Wno-dev
 	)
 
 	cmake_src_configure
