@@ -3,7 +3,8 @@
 
 EAPI=8
 
-# Boost exports it's imported locations only for Gentoo release.
+# Boost exports it's imported locations only for Gentoo release:
+#   https://bugs.gentoo.org/892683
 CMAKE_BUILD_TYPE=Gentoo
 inherit cmake git-r3
 
