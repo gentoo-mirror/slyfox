@@ -3,6 +3,8 @@
 
 EAPI=8
 
+# Boost exports it's imported locations only for Gentoo release.
+CMAKE_BUILD_TYPE=Gentoo
 inherit cmake git-r3
 
 DESCRIPTION="open-source engine for Heroes of Might and Magic III"
