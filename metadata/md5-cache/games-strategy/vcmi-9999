@@ -4,11 +4,11 @@ DEPEND=dev-lang/luajit >=dev-libs/boost-1.48:= dev-cpp/tbb dev-qt/linguist-tools
 DESCRIPTION=open-source engine for Heroes of Might and Magic III
 EAPI=8
 HOMEPAGE=https://vcmi.eu/
-INHERIT=cmake git-r3
+INHERIT=cmake git-r3 xdg-utils
 LICENSE=GPL-2
 PROPERTIES=live
 RDEPEND=dev-lang/luajit >=dev-libs/boost-1.48:= dev-cpp/tbb dev-qt/linguist-tools:= dev-qt/qtcore:= dev-qt/qtgui:= dev-qt/qtnetwork:= dev-qt/qtwidgets:= media-video/ffmpeg:= media-libs/libsdl2:= media-libs/sdl2-image:= media-libs/sdl2-mixer:= media-libs/sdl2-ttf:= sys-libs/zlib:=[minizip]
 RESTRICT=test
 SLOT=0
 _eclasses_=toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	38c85b725d0467e51954ea921b6c104b	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	b2e109b7341cd993b8bdfcc60652a14d	git-r3	2347f8fe2d392b2a091191f94be37e6f
-_md5_=2b5c79b3c13b7b13606b3a03c3cf9f40
+_md5_=86bbd47e7d0064040ddd3fb9d6748d75
