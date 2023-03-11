@@ -6,7 +6,7 @@ EAPI=8
 # Boost exports it's imported locations only for Gentoo release:
 #   https://bugs.gentoo.org/892683
 CMAKE_BUILD_TYPE=Gentoo
-inherit cmake git-r3
+inherit cmake git-r3 xdg-utils
 
 DESCRIPTION="open-source engine for Heroes of Might and Magic III"
 HOMEPAGE="https://vcmi.eu/"
@@ -52,6 +52,8 @@ src_configure() {
 }
 
 pkg_postinst() {
+	xdg_icon_cache_update
+
 	einfo "To start check out https://wiki.vcmi.eu/Installation_on_Linux#Automated_install"
 	einfo "Howto:"
 	einfo " - add 'Data', 'Maps', 'Mp3' to ~/.local/share/vcmi"
