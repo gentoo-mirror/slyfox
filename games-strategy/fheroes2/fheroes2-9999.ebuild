@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake git-r3
+inherit cmake git-r3 xdg-utils
 
 DESCRIPTION="free implementation of Heroes of Might and Magic II game engine"
 HOMEPAGE="https://ihhub.github.io/fheroes2/"
@@ -41,6 +41,8 @@ src_install() {
 }
 
 pkg_postinst() {
+	xdg_icon_cache_update
+
 	einfo "Howto:"
 	einfo " - add 'ANIM', 'SOUNDS', 'MUSIC', 'FONTS' to ~/.local/share/fheroes2/files"
 	einfo " - \$ cd ~/.local/share/fheroes2"
