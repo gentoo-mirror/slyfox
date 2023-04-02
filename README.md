@@ -18,6 +18,7 @@ emerge app-eselect/eselect-repository
 # Fetch and output the list of overlays
 eselect repository list
 eselect repository enable slyfox
+emaint sync -r slyfox
 ```
 
 or we can use the layman method:
