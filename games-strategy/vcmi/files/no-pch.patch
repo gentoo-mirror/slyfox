@@ -1,0 +1,34 @@
+https://github.com/vcmi/vcmi/pull/1893
+
+From 6a2ce644f2a0335513b8893fe90491a978bbe9c6 Mon Sep 17 00:00:00 2001
+From: Sergei Trofimovich <slyich@gmail.com>
+Date: Fri, 7 Apr 2023 09:50:33 +0100
+Subject: [PATCH] Add missing include headers when building with
+ -DENABLE_PCH=OFF
+
+Example build failure is missing `VCMI_LIB_NAMESPACE_BEGIN` declaration:
+
+    [  0%] Building CXX object lib/CMakeFiles/vcmi.dir/spells/ObstacleCasterProxy.cpp.o
+    In file included from lib/spells/ProxyCaster.h:13,
+                     from lib/spells/ObstacleCasterProxy.h:11,
+                     from lib/spells/ObstacleCasterProxy.cpp:11:
+    lib/../include/vcmi/spells/Caster.h:13:1: error: 'VCMI_LIB_NAMESPACE_BEGIN' does not name a type
+       13 | VCMI_LIB_NAMESPACE_BEGIN
+          | ^~~~~~~~~~~~~~~~~~~~~~~~
+---
+ include/vcmi/spells/Caster.h | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/include/vcmi/spells/Caster.h b/include/vcmi/spells/Caster.h
+index 123865a972..7815fd9402 100644
+--- a/include/vcmi/spells/Caster.h
++++ b/include/vcmi/spells/Caster.h
+@@ -10,6 +10,8 @@
+ 
+ #pragma once
+ 
++#include "Global.h"
++
+ VCMI_LIB_NAMESPACE_BEGIN
+ 
+ class PlayerColor;
