@@ -37,11 +37,6 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
-PATCHES=(
-	# https://github.com/vcmi/vcmi/pull/1893
-	"${FILESDIR}"/no-pch.patch
-)
-
 src_configure() {
 	local mycmakeargs=(
 		# Stole from debian/control. Defaults do not have
