@@ -9,29 +9,16 @@ unkeyworded (these are usually prerelreases).
 
 # How to use
 
-First, let's enable the overlay. We can either use the
-`eselect-repository` method:
+Use standard [repos.conf](https://wiki.gentoo.org/wiki//etc/portage/repos.conf)
+configuration for the overlay:
 
-```sh
-# Install eselect-repository if you don't already have it
-emerge app-eselect/eselect-repository
-# Fetch and output the list of overlays
-eselect repository list
-eselect repository enable slyfox
-emaint sync -r slyfox
-```
-
-or we can use the layman method:
-
-```sh
-# Add important USE flags for layman to your package.use directory:
-echo "app-portage/layman sync-plugin-portage git" >> /etc/portage/package.use/layman
-# Install layman if you don't already have it
-emerge app-portage/layman
-# Rebuild layman's repos.conf file:
-layman-updater -R
-# Add the ::slyfox overlay:
-layman -a slyfox
+```bash
+cat > slyfox.conf <<EOF
+[slyfox]
+location = /var/db/repos/slyfox
+sync-type = git
+sync-uri = https://github.com/trofi/slyfox-gentoo.git
+EOF
 ```
 
 Finally, we need to unmask the overlay (this does not apply if your system
