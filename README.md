@@ -13,12 +13,16 @@ Use standard [repos.conf](https://wiki.gentoo.org/wiki//etc/portage/repos.conf)
 configuration for the overlay:
 
 ```bash
+# Add an entry
 cat > slyfox.conf <<EOF
 [slyfox]
 location = /var/db/repos/slyfox
 sync-type = git
 sync-uri = https://github.com/trofi/slyfox-gentoo.git
 EOF
+
+# Sync the overlay
+emerge --sync
 ```
 
 Finally, we need to unmask the overlay (this does not apply if your system
